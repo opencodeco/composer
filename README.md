@@ -1,20 +1,19 @@
-OpenCodeCo Composer repository
-===========================
+# OpenCodeCo Composer Repository
 
-This is [composer](https://getcomposer.org/) repository to speed up packages installation from OpenCodeCo.
+This is a [composer](https://getcomposer.org/) repository to speed up packages installation from OpenCodeCo.
 
 Contains:
-  - Packages that needed fixes that upstream does not accept
+- Packages that needed fixes that upstream does not accept.
 
 To use this, your `composer.json` should contain:
 
 ```json
-	"repositories": [
-		{
-			"type": "composer",
-			"url": "https://composer.opencodeco.dev"
-		},
-    ]
+"repositories": [
+    {
+        "type": "composer",
+        "url": "https://composer.opencodeco.dev"
+    }
+]
 ```
 
 You can add it with:
