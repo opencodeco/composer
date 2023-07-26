@@ -1,0 +1,118 @@
+{
+    "packages": {
+        "hyperf/metric": [
+            {
+                "name": "hyperf/metric",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/opencodeco/hyperf-metric.git",
+                    "reference": "3e7eeb6758335aae2bb36d20bcdb944c7e91d067"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/opencodeco/hyperf-metric/zipball/3e7eeb6758335aae2bb36d20bcdb944c7e91d067",
+                    "reference": "3e7eeb6758335aae2bb36d20bcdb944c7e91d067",
+                    "shasum": ""
+                },
+                "require": {
+                    "hyperf/codec": "^3.0",
+                    "hyperf/contract": "^3.0",
+                    "hyperf/engine": "^2.9",
+                    "hyperf/guzzle": "^3.0",
+                    "hyperf/support": "^3.0",
+                    "hyperf/utils": "^3.0",
+                    "php": ">=8.0",
+                    "promphp/prometheus_client_php": "^2.7",
+                    "psr/container": "^2.0",
+                    "psr/event-dispatcher": "^1.0",
+                    "psr/http-message": "^2.0"
+                },
+                "require-dev": {
+                    "friendsofphp/php-cs-fixer": "^3.21",
+                    "hyperf/async-queue": "^3.0",
+                    "hyperf/config": "^3.0",
+                    "hyperf/db-connection": "^3.0",
+                    "hyperf/di": "^3.0",
+                    "hyperf/event": "^3.0",
+                    "hyperf/framework": "^3.0",
+                    "hyperf/process": "^3.0",
+                    "hyperf/redis": "^3.0",
+                    "hyperf/testing": "^3.0",
+                    "influxdb/influxdb-php": "^1.15",
+                    "mockery/mockery": "^1.6",
+                    "phpstan/extension-installer": "^1.3",
+                    "phpstan/phpstan": "^1.10",
+                    "phpstan/phpstan-mockery": "^1.1",
+                    "rector/rector": "^0.17.5",
+                    "slickdeals/statsd": "^3.1",
+                    "swoole/ide-helper": "^5.0"
+                },
+                "suggest": {
+                    "hyperf/di": "Required to use annotations.",
+                    "hyperf/event": "Required to use listeners for default metrics.",
+                    "hyperf/http-server": "Required to capture routes in middleware.",
+                    "hyperf/process": "Required to use standalone process, or you have to roll your own",
+                    "hyperf/retry": "Required to use back-off retry implementation.",
+                    "influxdb/influxdb-php": "Required to use InfluxDB driver.",
+                    "slickdeals/statsd": "Required to use StatdD driver."
+                },
+                "time": "2023-07-12T23:44:32+00:00",
+                "default-branch": true,
+                "type": "library",
+                "extra": {
+                    "branch-alias": {
+                        "dev-master": "3.0-dev"
+                    },
+                    "hyperf": {
+                        "config": "Hyperf\\Metric\\ConfigProvider"
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Hyperf\\Metric\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "HyperfTest\\Metric\\": "tests/"
+                    }
+                },
+                "scripts": {
+                    "test": [
+                        "co-phpunit"
+                    ],
+                    "test-coverage": [
+                        "co-phpunit --coverage-clover clover.xml"
+                    ],
+                    "cs-fix": [
+                        "php-cs-fixer fix $1"
+                    ],
+                    "analyse": [
+                        "phpstan analyse --memory-limit=-1 -l 5 -c phpstan.neon"
+                    ],
+                    "rector": [
+                        "rector process --clear-cache"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "description": "Drop-in replacement for the Hyperf Metric component.",
+                "keywords": [
+                    "hyperf",
+                    "influxdb",
+                    "metrics",
+                    "php",
+                    "prometheus",
+                    "statsd"
+                ],
+                "support": {
+                    "source": "https://github.com/opencodeco/hyperf-metric/tree/main",
+                    "issues": "https://github.com/opencodeco/hyperf-metric/issues"
+                }
+            }
+        ]
+    }
+}

@@ -2,7 +2,14 @@
     "packages": [],
     "includes": {
         "all.json": {
-            "sha1": "4b230f5e31d0ac72f7af14a5be4d9c4e62eaddef"
+            "sha1": "20f9a97a5c3253e2abe60bbd466e4e49f23c4697"
         }
-    }
+    },
+    "metadata-url": "/p2/%package%.json",
+    "available-packages": [
+        "hyperf/gotask",
+        "hyperf/metric",
+        "hyperf/tracer",
+        "reasno/fastmongo"
+    ]
 }
