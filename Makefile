@@ -2,7 +2,14 @@ PHP := php -dmemory_limit=-1
 SATIS := vendor/bin/satis
 COMPOSER := $(shell which composer.phar 2>/dev/null || which composer 2>/dev/null)
 
-all: dist/packages.json
+all: dist/packages.json deploy
+
+.PHONY: deploy
+deploy:
+	cd dist
+	git add --all
+	git commit -m "chore: Deploy"
+	git push origin gh-pages
 
 dist/packages.json: dist/.git $(SATIS) Makefile satis.json
 	$(PHP) $(SATIS) build satis.json dist
