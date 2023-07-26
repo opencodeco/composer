@@ -2,7 +2,7 @@
     "packages": [],
     "includes": {
         "all.json": {
-            "sha1": "bf0b94bc918afb538beac5748c13465b26467caa"
+            "sha1": "b27d7626b5584ab5366b8cb7600f266d06323740"
         }
     },
     "metadata-url": "/p2/%package%.json",
