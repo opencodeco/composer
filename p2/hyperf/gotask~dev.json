@@ -82,7 +82,7 @@
                     "php"
                 ],
                 "support": {
-                    "source": "https://github.com/opencodeco/gotask/tree/main"
+                    "source": "https://github.com/opencodeco/gotask/tree/v3.0.0"
                 }
             }
         ]

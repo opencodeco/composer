@@ -109,7 +109,7 @@
                     "statsd"
                 ],
                 "support": {
-                    "source": "https://github.com/opencodeco/hyperf-metric/tree/main",
+                    "source": "https://github.com/opencodeco/hyperf-metric/tree/v3.0.0",
                     "issues": "https://github.com/opencodeco/hyperf-metric/issues"
                 }
             }

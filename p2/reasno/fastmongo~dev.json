@@ -70,7 +70,7 @@
                     "php"
                 ],
                 "support": {
-                    "source": "https://github.com/opencodeco/fastmongo/tree/main",
+                    "source": "https://github.com/opencodeco/fastmongo/tree/v3.0.0",
                     "issues": "https://github.com/opencodeco/fastmongo/issues"
                 }
             }

@@ -1,5 +1,78 @@
 {
     "packages": {
-        "reasno/fastmongo": []
+        "reasno/fastmongo": [
+            {
+                "name": "reasno/fastmongo",
+                "version": "v3.0.0",
+                "version_normalized": "3.0.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/opencodeco/fastmongo.git",
+                    "reference": "9e5c5065ce414189c9e53014f5704e84acdbef4a"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/opencodeco/fastmongo/zipball/9e5c5065ce414189c9e53014f5704e84acdbef4a",
+                    "reference": "9e5c5065ce414189c9e53014f5704e84acdbef4a",
+                    "shasum": ""
+                },
+                "require": {
+                    "ext-mongodb": "*",
+                    "ext-swoole": ">=5.0",
+                    "hyperf/gotask": "^3.0",
+                    "php": ">=8.1"
+                },
+                "require-dev": {
+                    "friendsofphp/php-cs-fixer": "^3.21",
+                    "hyperf/testing": "^3.0",
+                    "phpstan/phpstan": "^1.10",
+                    "swoole/ide-helper": "^5.0"
+                },
+                "time": "2023-07-12T01:46:01+00:00",
+                "bin": [
+                    "bin/mongo-proxy-darwin-amd64",
+                    "bin/mongo-proxy-linux-amd64"
+                ],
+                "type": "library",
+                "extra": {
+                    "hyperf": {
+                        "config": "Reasno\\Fastmongo\\ConfigProvider"
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Reasno\\Fastmongo\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "HyperfTest\\": "tests"
+                    }
+                },
+                "scripts": {
+                    "test": [
+                        "co-phpunit -c phpunit.xml --colors=always"
+                    ],
+                    "analyse": [
+                        "phpstan analyse --memory-limit 300M -l 0 ./src"
+                    ],
+                    "cs-fix": [
+                        "php-cs-fixer fix $1"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "description": "mongodb driver via hyperf/gotask",
+                "keywords": [
+                    "hyperf",
+                    "php"
+                ],
+                "support": {
+                    "source": "https://github.com/opencodeco/fastmongo/tree/v3.0.0",
+                    "issues": "https://github.com/opencodeco/fastmongo/issues"
+                }
+            }
+        ]
     }
 }

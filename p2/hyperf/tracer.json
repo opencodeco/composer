@@ -1,5 +1,103 @@
 {
     "packages": {
-        "hyperf/tracer": []
+        "hyperf/tracer": [
+            {
+                "name": "hyperf/tracer",
+                "version": "v3.0.0",
+                "version_normalized": "3.0.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/opencodeco/hyperf-tracer.git",
+                    "reference": "05afe003f6499feb66deab9fb59eb5f8498e38b7"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/opencodeco/hyperf-tracer/zipball/05afe003f6499feb66deab9fb59eb5f8498e38b7",
+                    "reference": "05afe003f6499feb66deab9fb59eb5f8498e38b7",
+                    "shasum": ""
+                },
+                "require": {
+                    "hyperf/contract": "^3.0",
+                    "hyperf/di": "^3.0",
+                    "hyperf/guzzle": "^3.0",
+                    "hyperf/support": "^3.0",
+                    "hyperf/utils": "^3.0",
+                    "jcchavezs/zipkin-opentracing": "^2.0",
+                    "opentracing/opentracing": "^1.0",
+                    "php": ">=8.0",
+                    "psr/http-message": "^1.0|^2.0"
+                },
+                "require-dev": {
+                    "friendsofphp/php-cs-fixer": "^3.21",
+                    "hyperf/config": "^3.0",
+                    "hyperf/testing": "^3.0",
+                    "jonahgeorge/jaeger-client-php": "^1.4",
+                    "mockery/mockery": "^1.6",
+                    "phpstan/extension-installer": "^1.3",
+                    "phpstan/phpstan": "^1.10",
+                    "phpstan/phpstan-mockery": "^1.1",
+                    "rector/rector": "^0.17.5"
+                },
+                "suggest": {
+                    "hyperf/event": "Required to use DbQueryExecutedListener.",
+                    "jonahgeorge/jaeger-client-php": "Required (^0.6) to use jaeger tracing."
+                },
+                "time": "2023-07-13T00:36:50+00:00",
+                "type": "library",
+                "extra": {
+                    "branch-alias": {
+                        "dev-master": "3.0-dev"
+                    },
+                    "hyperf": {
+                        "config": "Hyperf\\Tracer\\ConfigProvider"
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Hyperf\\Tracer\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "HyperfTest\\Tracer\\": "tests/"
+                    }
+                },
+                "scripts": {
+                    "test": [
+                        "co-phpunit"
+                    ],
+                    "test-coverage": [
+                        "co-phpunit --coverage-clover clover.xml"
+                    ],
+                    "cs-fix": [
+                        "php-cs-fixer fix $1"
+                    ],
+                    "analyse": [
+                        "phpstan analyse --memory-limit=-1 -l 5 -c phpstan.neon"
+                    ],
+                    "rector": [
+                        "rector process --clear-cache"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "description": "Drop-in replacement for the Hyperf Tracer component.",
+                "homepage": "https://hyperf.io",
+                "keywords": [
+                    "hyperf",
+                    "jaeger",
+                    "open-tracing",
+                    "php",
+                    "zipkin"
+                ],
+                "support": {
+                    "docs": "https://hyperf.wiki",
+                    "issues": "https://github.com/hyperf/hyperf/issues",
+                    "pull-request": "https://github.com/hyperf/hyperf/pulls",
+                    "source": "https://github.com/hyperf/hyperf"
+                }
+            }
+        ]
     }
 }
