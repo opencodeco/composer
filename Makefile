@@ -6,10 +6,7 @@ all: dist/packages.json deploy
 
 .PHONY: deploy
 deploy:
-	cd dist
-	git add --all
-	git commit -m "chore: Deploy"
-	git push
+	cd dist && git add --all && git commit -m "chore: Deploy" && git push
 
 dist/packages.json: dist/.git $(SATIS) Makefile satis.json
 	$(PHP) $(SATIS) build satis.json dist
