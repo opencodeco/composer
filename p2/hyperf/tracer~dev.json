@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/opencodeco/hyperf-tracer.git",
-                    "reference": "05afe003f6499feb66deab9fb59eb5f8498e38b7"
+                    "reference": "2d7f1ae05ec54a06d03c0178b0ebeb0bc91bf456"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/opencodeco/hyperf-tracer/zipball/05afe003f6499feb66deab9fb59eb5f8498e38b7",
-                    "reference": "05afe003f6499feb66deab9fb59eb5f8498e38b7",
+                    "url": "https://api.github.com/repos/opencodeco/hyperf-tracer/zipball/2d7f1ae05ec54a06d03c0178b0ebeb0bc91bf456",
+                    "reference": "2d7f1ae05ec54a06d03c0178b0ebeb0bc91bf456",
                     "shasum": ""
                 },
                 "require": {
@@ -23,6 +23,7 @@
                     "hyperf/support": "^3.0",
                     "hyperf/utils": "^3.0",
                     "jcchavezs/zipkin-opentracing": "^2.0",
+                    "jonahgeorge/jaeger-client-php": "^1.4",
                     "opentracing/opentracing": "^1.0",
                     "php": ">=8.0",
                     "psr/http-message": "^1.0|^2.0"
@@ -31,7 +32,6 @@
                     "friendsofphp/php-cs-fixer": "^3.21",
                     "hyperf/config": "^3.0",
                     "hyperf/testing": "^3.0",
-                    "jonahgeorge/jaeger-client-php": "^1.4",
                     "mockery/mockery": "^1.6",
                     "phpstan/extension-installer": "^1.3",
                     "phpstan/phpstan": "^1.10",
@@ -42,7 +42,7 @@
                     "hyperf/event": "Required to use DbQueryExecutedListener.",
                     "jonahgeorge/jaeger-client-php": "Required (^0.6) to use jaeger tracing."
                 },
-                "time": "2023-07-13T00:36:50+00:00",
+                "time": "2023-07-26T17:36:27+00:00",
                 "default-branch": true,
                 "type": "library",
                 "extra": {
