@@ -1,14 +1,17 @@
 {
-    "name": "eventum/composer",
-    "description": "Eventum Composer repository",
-    "homepage": "https://eventum.github.io/composer/",
+    "name": "opencodeco/composer",
+    "description": "OpenCodeCo Composer Repository",
+    "homepage": "https://composer.opencodeco.dev",
     "config": {
         "platform": {
-            "php": "7.3.0"
+            "php": "8.2"
         },
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/satis": true
+        }
     },
     "require": {
-        "composer/satis": "dev-master#2845708 as 1.0.0"
+        "composer/satis": "dev-main"
     }
 }

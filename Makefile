@@ -8,7 +8,7 @@ dist/packages.json: dist/.git $(SATIS) Makefile satis.json
 	$(PHP) $(SATIS) build satis.json dist
 
 dist/.git:
-	git clone git@github.com:eventum/composer.git dist -b gh-pages --depth=1
+	git clone git@github.com:opencodeco/composer.git dist -b gh-pages --depth=1
 
 $(SATIS): composer.lock
 	$(PHP) $(COMPOSER) install
