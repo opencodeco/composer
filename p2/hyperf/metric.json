@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/opencodeco/hyperf-metric.git",
-                    "reference": "878f11a9a65d2d3c8afab1ae7ced730e6ea128f6"
+                    "reference": "f3759d284ffa8a0180208d5959a7a3ca19ad228c"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/opencodeco/hyperf-metric/zipball/878f11a9a65d2d3c8afab1ae7ced730e6ea128f6",
-                    "reference": "878f11a9a65d2d3c8afab1ae7ced730e6ea128f6",
+                    "url": "https://api.github.com/repos/opencodeco/hyperf-metric/zipball/f3759d284ffa8a0180208d5959a7a3ca19ad228c",
+                    "reference": "f3759d284ffa8a0180208d5959a7a3ca19ad228c",
                     "shasum": ""
                 },
                 "require": {
@@ -58,7 +58,7 @@
                     "influxdb/influxdb-php": "Required to use InfluxDB driver.",
                     "slickdeals/statsd": "Required to use StatdD driver."
                 },
-                "time": "2023-07-26T17:05:19+00:00",
+                "time": "2023-07-26T17:59:29+00:00",
                 "type": "library",
                 "extra": {
                     "branch-alias": {
