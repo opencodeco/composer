@@ -9,7 +9,7 @@ deploy:
 	cd dist
 	git add --all
 	git commit -m "chore: Deploy"
-	git push origin gh-pages
+	git push
 
 dist/packages.json: dist/.git $(SATIS) Makefile satis.json
 	$(PHP) $(SATIS) build satis.json dist
