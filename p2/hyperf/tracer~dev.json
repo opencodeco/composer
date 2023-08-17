@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/opencodeco/hyperf-tracer.git",
-                    "reference": "7bac2f6aa05842cbb095217621dff8c120902a43"
+                    "reference": "25fd60ce08880f25439a43f9f14b0b5882c94add"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/opencodeco/hyperf-tracer/zipball/7bac2f6aa05842cbb095217621dff8c120902a43",
-                    "reference": "7bac2f6aa05842cbb095217621dff8c120902a43",
+                    "url": "https://api.github.com/repos/opencodeco/hyperf-tracer/zipball/25fd60ce08880f25439a43f9f14b0b5882c94add",
+                    "reference": "25fd60ce08880f25439a43f9f14b0b5882c94add",
                     "shasum": ""
                 },
                 "require": {
@@ -42,7 +42,7 @@
                     "hyperf/event": "Required to use DbQueryExecutedListener.",
                     "jonahgeorge/jaeger-client-php": "Required (^0.6) to use jaeger tracing."
                 },
-                "time": "2023-07-27T20:27:18+00:00",
+                "time": "2023-08-17T00:35:41+00:00",
                 "default-branch": true,
                 "type": "library",
                 "extra": {
