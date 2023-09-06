@@ -15,5 +15,8 @@
     }, {
         "type": "vcs",
 	"url": "https://github.com/opencodeco/fastmongo"
+    }, {
+        "type": "vcs",
+	"url": "https://github.com/opencodeco/hyperf-doctrine"
     }]
 }
