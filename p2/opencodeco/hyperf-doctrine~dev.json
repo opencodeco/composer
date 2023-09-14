@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/opencodeco/hyperf-doctrine.git",
-                    "reference": "80ec4416d78256fb88acc431180d5db976d23ba6"
+                    "reference": "a8d386a0533156e470443ba3205ddf3cd5cc8791"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/opencodeco/hyperf-doctrine/zipball/80ec4416d78256fb88acc431180d5db976d23ba6",
-                    "reference": "80ec4416d78256fb88acc431180d5db976d23ba6",
+                    "url": "https://api.github.com/repos/opencodeco/hyperf-doctrine/zipball/a8d386a0533156e470443ba3205ddf3cd5cc8791",
+                    "reference": "a8d386a0533156e470443ba3205ddf3cd5cc8791",
                     "shasum": ""
                 },
                 "require": {
@@ -30,7 +30,7 @@
                     "spatie/phpunit-watcher": "^1.23",
                     "swoole/ide-helper": "^5.0"
                 },
-                "time": "2023-09-06T13:07:06+00:00",
+                "time": "2023-09-06T18:14:20+00:00",
                 "default-branch": true,
                 "type": "library",
                 "extra": {
@@ -75,7 +75,7 @@
                     "php"
                 ],
                 "support": {
-                    "source": "https://github.com/opencodeco/hyperf-doctrine/tree/v3.0.0"
+                    "source": "https://github.com/opencodeco/hyperf-doctrine/tree/main"
                 }
             }
         ]
