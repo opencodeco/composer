@@ -249,6 +249,89 @@
                 "support": {
                     "source": "https://github.com/opencodeco/gotask/tree/v3.0.2"
                 }
+            },
+            {
+                "name": "hyperf/gotask",
+                "version": "v3.0.3",
+                "version_normalized": "3.0.3.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/opencodeco/gotask.git",
+                    "reference": "12f78d8a5d03f2591dba0390a49caadce0671728"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/opencodeco/gotask/zipball/12f78d8a5d03f2591dba0390a49caadce0671728",
+                    "reference": "12f78d8a5d03f2591dba0390a49caadce0671728",
+                    "shasum": ""
+                },
+                "require": {
+                    "ext-swoole": ">=5.0",
+                    "hyperf/pool": "^3.0",
+                    "hyperf/process": "^3.0",
+                    "php": ">=8.1",
+                    "spiral/goridge": "^2.4",
+                    "symfony/event-dispatcher": "^6.3"
+                },
+                "require-dev": {
+                    "friendsofphp/php-cs-fixer": "^3.21",
+                    "hyperf/command": "^3.0",
+                    "hyperf/config": "^3.0",
+                    "hyperf/di": "^3.0",
+                    "hyperf/framework": "^3.0",
+                    "hyperf/testing": "^3.0",
+                    "mockery/mockery": "^1.6",
+                    "phpstan/phpstan": "^1.10",
+                    "swoole/ide-helper": "^5.0"
+                },
+                "time": "2023-09-21T12:43:58+00:00",
+                "type": "library",
+                "extra": {
+                    "hyperf": {
+                        "config": "Hyperf\\GoTask\\ConfigProvider"
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Hyperf\\GoTask\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "HyperfTest\\": "tests"
+                    }
+                },
+                "scripts": {
+                    "test": [
+                        "go build -o app example/*.go && go build -o mongo example/mongo_client/*.go && phpunit -c phpunit.xml --colors=always"
+                    ],
+                    "start-test-server": [
+                        "php tests/TestServer.php"
+                    ],
+                    "test-go": [
+                        "/bin/bash -c 'php tests/TestServer.php & sleep 5 && go test ./...'"
+                    ],
+                    "analyse": [
+                        "phpstan analyse --memory-limit 300M -l 0 ./src"
+                    ],
+                    "cs-fix": [
+                        "php-cs-fixer fix $1"
+                    ],
+                    "binary": [
+                        "go build -o mongo example/mongo_client/*.go"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "description": "A replacement for Swoole TaskWorker in Go",
+                "keywords": [
+                    "hyperf",
+                    "php"
+                ],
+                "support": {
+                    "source": "https://github.com/opencodeco/gotask/tree/v3.0.3"
+                }
             }
         ]
     }
