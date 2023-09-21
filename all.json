@@ -257,12 +257,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/opencodeco/gotask.git",
-                    "reference": "cb2b4d8f929cbf5951906be315f464ff9abbcdc9"
+                    "reference": "ae7ede3873fbaa43715f801d21424484820bfcd2"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/opencodeco/gotask/zipball/cb2b4d8f929cbf5951906be315f464ff9abbcdc9",
-                    "reference": "cb2b4d8f929cbf5951906be315f464ff9abbcdc9",
+                    "url": "https://api.github.com/repos/opencodeco/gotask/zipball/ae7ede3873fbaa43715f801d21424484820bfcd2",
+                    "reference": "ae7ede3873fbaa43715f801d21424484820bfcd2",
                     "shasum": ""
                 },
                 "require": {
@@ -284,7 +284,7 @@
                     "phpstan/phpstan": "^1.10",
                     "swoole/ide-helper": "^5.0"
                 },
-                "time": "2023-09-21T01:22:07+00:00",
+                "time": "2023-09-21T02:04:46+00:00",
                 "default-branch": true,
                 "type": "library",
                 "extra": {
@@ -331,7 +331,7 @@
                     "php"
                 ],
                 "support": {
-                    "source": "https://github.com/opencodeco/gotask/tree/v3.0.2"
+                    "source": "https://github.com/opencodeco/gotask/tree/main"
                 }
             }
         },
