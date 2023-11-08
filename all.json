@@ -1,6 +1,89 @@
 {
     "packages": {
         "hyperf/gotask": {
+            "2.x-dev": {
+                "name": "hyperf/gotask",
+                "version": "2.x-dev",
+                "version_normalized": "2.9999999.9999999.9999999-dev",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/opencodeco/gotask.git",
+                    "reference": "eaf99faed7abfebff23898e75db37a5b3450b224"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/opencodeco/gotask/zipball/eaf99faed7abfebff23898e75db37a5b3450b224",
+                    "reference": "eaf99faed7abfebff23898e75db37a5b3450b224",
+                    "shasum": ""
+                },
+                "require": {
+                    "ext-swoole": ">=4.4",
+                    "hyperf/pool": "^2.2|^3.0",
+                    "hyperf/process": "^2.2|^3.0",
+                    "php": ">=7.4",
+                    "spiral/goridge": "^2.4.1",
+                    "symfony/event-dispatcher": "^5.1"
+                },
+                "require-dev": {
+                    "friendsofphp/php-cs-fixer": "^3.0",
+                    "hyperf/command": "^2.2|^3.0",
+                    "hyperf/config": "^2.2|^3.0",
+                    "hyperf/di": "^2.2|^3.0",
+                    "hyperf/framework": "^2.2|^3.0",
+                    "hyperf/testing": "^2.2|^3.0",
+                    "mockery/mockery": "^1.3",
+                    "phpstan/phpstan": "^1.0",
+                    "swoole/ide-helper": "^4.5"
+                },
+                "time": "2023-10-09T12:30:02+00:00",
+                "type": "library",
+                "extra": {
+                    "hyperf": {
+                        "config": "Hyperf\\GoTask\\ConfigProvider"
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Hyperf\\GoTask\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "HyperfTest\\": "tests"
+                    }
+                },
+                "scripts": {
+                    "test": [
+                        "go build -o app example/*.go && go build -o mongo example/mongo_client/*.go && phpunit -c phpunit.xml --colors=always"
+                    ],
+                    "start-test-server": [
+                        "php tests/TestServer.php"
+                    ],
+                    "test-go": [
+                        "/bin/bash -c 'php tests/TestServer.php & sleep 5 && go test ./...'"
+                    ],
+                    "analyse": [
+                        "phpstan analyse --memory-limit 300M -l 0 ./src"
+                    ],
+                    "cs-fix": [
+                        "php-cs-fixer fix $1"
+                    ],
+                    "binary": [
+                        "go build -o mongo example/mongo_client/*.go"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "description": "A replacement for Swoole TaskWorker in Go",
+                "keywords": [
+                    "hyperf",
+                    "php"
+                ],
+                "support": {
+                    "source": "https://github.com/opencodeco/gotask/tree/2.x"
+                }
+            },
             "v3.0.0": {
                 "name": "hyperf/gotask",
                 "version": "v3.0.0",
@@ -974,19 +1057,19 @@
                     "issues": "https://github.com/opencodeco/hyperf-metric/issues"
                 }
             },
-            "dev-celosauro-patch-1": {
+            "v3.0.5": {
                 "name": "hyperf/metric",
-                "version": "dev-celosauro-patch-1",
-                "version_normalized": "dev-celosauro-patch-1",
+                "version": "v3.0.5",
+                "version_normalized": "3.0.5.0",
                 "source": {
                     "type": "git",
                     "url": "https://github.com/opencodeco/hyperf-metric.git",
-                    "reference": "da823658ee63a2f2c05a512ebed431b5dd8fc05a"
+                    "reference": "6804d04cc74d7cc1a915a736e8f65de16517aba7"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/opencodeco/hyperf-metric/zipball/da823658ee63a2f2c05a512ebed431b5dd8fc05a",
-                    "reference": "da823658ee63a2f2c05a512ebed431b5dd8fc05a",
+                    "url": "https://api.github.com/repos/opencodeco/hyperf-metric/zipball/6804d04cc74d7cc1a915a736e8f65de16517aba7",
+                    "reference": "6804d04cc74d7cc1a915a736e8f65de16517aba7",
                     "shasum": ""
                 },
                 "require": {
@@ -1031,7 +1114,7 @@
                     "influxdb/influxdb-php": "Required to use InfluxDB driver.",
                     "slickdeals/statsd": "Required to use StatdD driver."
                 },
-                "time": "2023-10-02T13:48:30+00:00",
+                "time": "2023-10-13T22:03:05+00:00",
                 "type": "library",
                 "extra": {
                     "branch-alias": {
@@ -1081,23 +1164,23 @@
                     "statsd"
                 ],
                 "support": {
-                    "source": "https://github.com/opencodeco/hyperf-metric/tree/celosauro-patch-1",
+                    "source": "https://github.com/opencodeco/hyperf-metric/tree/v3.0.5",
                     "issues": "https://github.com/opencodeco/hyperf-metric/issues"
                 }
             },
-            "dev-chore/add_docker": {
+            "v3.0.6": {
                 "name": "hyperf/metric",
-                "version": "dev-chore/add_docker",
-                "version_normalized": "dev-chore/add_docker",
+                "version": "v3.0.6",
+                "version_normalized": "3.0.6.0",
                 "source": {
                     "type": "git",
                     "url": "https://github.com/opencodeco/hyperf-metric.git",
-                    "reference": "89cc56557573050f5be4b6dac222159086bd1a0b"
+                    "reference": "25e256777f6000c591eb04f87028023d27053340"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/opencodeco/hyperf-metric/zipball/89cc56557573050f5be4b6dac222159086bd1a0b",
-                    "reference": "89cc56557573050f5be4b6dac222159086bd1a0b",
+                    "url": "https://api.github.com/repos/opencodeco/hyperf-metric/zipball/25e256777f6000c591eb04f87028023d27053340",
+                    "reference": "25e256777f6000c591eb04f87028023d27053340",
                     "shasum": ""
                 },
                 "require": {
@@ -1142,7 +1225,7 @@
                     "influxdb/influxdb-php": "Required to use InfluxDB driver.",
                     "slickdeals/statsd": "Required to use StatdD driver."
                 },
-                "time": "2023-09-25T12:59:53+00:00",
+                "time": "2023-11-08T21:19:03+00:00",
                 "type": "library",
                 "extra": {
                     "branch-alias": {
@@ -1168,6 +1251,120 @@
                     ],
                     "test-coverage": [
                         "co-phpunit --coverage-clover clover.xml"
+                    ],
+                    "cs-fix": [
+                        "php-cs-fixer fix $1"
+                    ],
+                    "analyse": [
+                        "phpstan analyse --memory-limit=-1 -l 5 -c phpstan.neon"
+                    ],
+                    "rector": [
+                        "rector process --clear-cache"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "description": "Drop-in replacement for the Hyperf Metric component.",
+                "keywords": [
+                    "hyperf",
+                    "influxdb",
+                    "metrics",
+                    "php",
+                    "prometheus",
+                    "statsd"
+                ],
+                "support": {
+                    "source": "https://github.com/opencodeco/hyperf-metric/tree/v3.0.6",
+                    "issues": "https://github.com/opencodeco/hyperf-metric/issues"
+                }
+            },
+            "dev-chore/add_docker": {
+                "name": "hyperf/metric",
+                "version": "dev-chore/add_docker",
+                "version_normalized": "dev-chore/add_docker",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/opencodeco/hyperf-metric.git",
+                    "reference": "ac55627447554858634866d44760bf0b31e810a6"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/opencodeco/hyperf-metric/zipball/ac55627447554858634866d44760bf0b31e810a6",
+                    "reference": "ac55627447554858634866d44760bf0b31e810a6",
+                    "shasum": ""
+                },
+                "require": {
+                    "hyperf/codec": "^3.0",
+                    "hyperf/contract": "^3.0",
+                    "hyperf/engine": "^2.9",
+                    "hyperf/guzzle": "^3.0",
+                    "hyperf/support": "^3.0",
+                    "hyperf/utils": "^3.0",
+                    "php": ">=8.0",
+                    "promphp/prometheus_client_php": "^2.7",
+                    "psr/container": "^2.0",
+                    "psr/event-dispatcher": "^1.0",
+                    "psr/http-message": "^1.0|^2.0"
+                },
+                "require-dev": {
+                    "friendsofphp/php-cs-fixer": "^3.21",
+                    "hyperf/async-queue": "^3.0",
+                    "hyperf/config": "^3.0",
+                    "hyperf/db-connection": "^3.0",
+                    "hyperf/di": "^3.0",
+                    "hyperf/event": "^3.0",
+                    "hyperf/framework": "^3.0",
+                    "hyperf/process": "^3.0",
+                    "hyperf/redis": "^3.0",
+                    "hyperf/testing": "^3.0",
+                    "influxdb/influxdb-php": "^1.15",
+                    "mockery/mockery": "^1.6",
+                    "phpstan/extension-installer": "^1.3",
+                    "phpstan/phpstan": "^1.10",
+                    "phpstan/phpstan-mockery": "^1.1",
+                    "rector/rector": "^0.17.5",
+                    "slickdeals/statsd": "^3.1",
+                    "swoole/ide-helper": "^5.0"
+                },
+                "suggest": {
+                    "hyperf/di": "Required to use annotations.",
+                    "hyperf/event": "Required to use listeners for default metrics.",
+                    "hyperf/http-server": "Required to capture routes in middleware.",
+                    "hyperf/process": "Required to use standalone process, or you have to roll your own",
+                    "hyperf/retry": "Required to use back-off retry implementation.",
+                    "influxdb/influxdb-php": "Required to use InfluxDB driver.",
+                    "slickdeals/statsd": "Required to use StatdD driver."
+                },
+                "time": "2023-10-15T02:42:59+00:00",
+                "type": "library",
+                "extra": {
+                    "branch-alias": {
+                        "dev-master": "3.0-dev"
+                    },
+                    "hyperf": {
+                        "config": "Hyperf\\Metric\\ConfigProvider"
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Hyperf\\Metric\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "HyperfTest\\Metric\\": "tests/"
+                    }
+                },
+                "scripts": {
+                    "test": [
+                        "co-phpunit"
+                    ],
+                    "test:coverage:clover": [
+                        "co-phpunit --coverage-clover tests/reports/clover.xml"
+                    ],
+                    "test:coverage:html": [
+                        "co-phpunit --coverage-html tests/reports/"
                     ],
                     "cs-fix": [
                         "php-cs-fixer fix $1"
@@ -1203,12 +1400,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/opencodeco/hyperf-metric.git",
-                    "reference": "c48ac23b23406d84613b9a934eedac907ac466ee"
+                    "reference": "25e256777f6000c591eb04f87028023d27053340"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/opencodeco/hyperf-metric/zipball/c48ac23b23406d84613b9a934eedac907ac466ee",
-                    "reference": "c48ac23b23406d84613b9a934eedac907ac466ee",
+                    "url": "https://api.github.com/repos/opencodeco/hyperf-metric/zipball/25e256777f6000c591eb04f87028023d27053340",
+                    "reference": "25e256777f6000c591eb04f87028023d27053340",
                     "shasum": ""
                 },
                 "require": {
@@ -1253,7 +1450,7 @@
                     "influxdb/influxdb-php": "Required to use InfluxDB driver.",
                     "slickdeals/statsd": "Required to use StatdD driver."
                 },
-                "time": "2023-10-02T13:58:42+00:00",
+                "time": "2023-11-08T21:19:03+00:00",
                 "default-branch": true,
                 "type": "library",
                 "extra": {
@@ -1304,7 +1501,7 @@
                     "statsd"
                 ],
                 "support": {
-                    "source": "https://github.com/opencodeco/hyperf-metric/tree/v3.0.4",
+                    "source": "https://github.com/opencodeco/hyperf-metric/tree/v3.0.6",
                     "issues": "https://github.com/opencodeco/hyperf-metric/issues"
                 }
             }
