@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/opencodeco/fastmongo.git",
-                    "reference": "9e5c5065ce414189c9e53014f5704e84acdbef4a"
+                    "reference": "309412af9f4f7b100dd0d88cffa7ebaf0e37b4e1"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/opencodeco/fastmongo/zipball/9e5c5065ce414189c9e53014f5704e84acdbef4a",
-                    "reference": "9e5c5065ce414189c9e53014f5704e84acdbef4a",
+                    "url": "https://api.github.com/repos/opencodeco/fastmongo/zipball/309412af9f4f7b100dd0d88cffa7ebaf0e37b4e1",
+                    "reference": "309412af9f4f7b100dd0d88cffa7ebaf0e37b4e1",
                     "shasum": ""
                 },
                 "require": {
@@ -28,7 +28,7 @@
                     "phpstan/phpstan": "^1.10",
                     "swoole/ide-helper": "^5.0"
                 },
-                "time": "2023-07-12T01:46:01+00:00",
+                "time": "2023-12-13T02:15:45+00:00",
                 "default-branch": true,
                 "bin": [
                     "bin/mongo-proxy-darwin-amd64",
@@ -70,7 +70,7 @@
                     "php"
                 ],
                 "support": {
-                    "source": "https://github.com/opencodeco/fastmongo/tree/v3.0.0",
+                    "source": "https://github.com/opencodeco/fastmongo/tree/main",
                     "issues": "https://github.com/opencodeco/fastmongo/issues"
                 }
             }
