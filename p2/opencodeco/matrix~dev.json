@@ -1,0 +1,66 @@
+{
+    "packages": {
+        "opencodeco/matrix": [
+            {
+                "name": "opencodeco/matrix",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/opencodeco/matrix.git",
+                    "reference": "6ea90a39f20994829b479b50df1f3169988e6a11"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/opencodeco/matrix/zipball/6ea90a39f20994829b479b50df1f3169988e6a11",
+                    "reference": "6ea90a39f20994829b479b50df1f3169988e6a11",
+                    "shasum": ""
+                },
+                "require": {
+                    "hyperf/command": "^3.0",
+                    "hyperf/database": "^3.0",
+                    "hyperf/db-connection": "*",
+                    "hyperf/di": "^3.0",
+                    "php": "^8.0"
+                },
+                "require-dev": {
+                    "hyperf/testing": "^3.0",
+                    "phpunit/phpunit": "^9.0"
+                },
+                "time": "2024-02-05T20:34:55+00:00",
+                "default-branch": true,
+                "type": "library",
+                "autoload": {
+                    "psr-4": {
+                        "OpenCodeCo\\Matrix\\": "src/"
+                    }
+                },
+                "scripts": {
+                    "post-update-cmd": [
+                        "php bin/hyperf.php matrix:publish"
+                    ],
+                    "post-install-cmd": [
+                        "php bin/hyperf.php matrix:publish"
+                    ],
+                    "post-autoload-dump": [
+                        "OpenCodeCo\\Matrix\\ComposerScripts::postAutoloadDump"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Diego Ananias",
+                        "email": "diegohsananias@gmail.com"
+                    }
+                ],
+                "description": "A multi-tenant library for Hyperf APIs.",
+                "support": {
+                    "source": "https://github.com/opencodeco/matrix/tree/main",
+                    "issues": "https://github.com/opencodeco/matrix/issues"
+                }
+            }
+        ]
+    }
+}

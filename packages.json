@@ -2,7 +2,7 @@
     "packages": [],
     "includes": {
         "all.json": {
-            "sha1": "1eba9196a660ecb98bab9fbee03ff46b375412a0"
+            "sha1": "6e6a384a6923239710ff1ce60bdf2f09d7de6a5b"
         }
     },
     "metadata-url": "/p2/%package%.json",
@@ -11,6 +11,7 @@
         "hyperf/metric",
         "hyperf/tracer",
         "opencodeco/hyperf-doctrine",
+        "opencodeco/matrix",
         "reasno/fastmongo"
     ]
 }
