@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/opencodeco/matrix.git",
-                    "reference": "6ea90a39f20994829b479b50df1f3169988e6a11"
+                    "reference": "d35315ab0018beb34985a85c87fef440b3e10f16"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/opencodeco/matrix/zipball/6ea90a39f20994829b479b50df1f3169988e6a11",
-                    "reference": "6ea90a39f20994829b479b50df1f3169988e6a11",
+                    "url": "https://api.github.com/repos/opencodeco/matrix/zipball/d35315ab0018beb34985a85c87fef440b3e10f16",
+                    "reference": "d35315ab0018beb34985a85c87fef440b3e10f16",
                     "shasum": ""
                 },
                 "require": {
@@ -27,9 +27,14 @@
                     "hyperf/testing": "^3.0",
                     "phpunit/phpunit": "^9.0"
                 },
-                "time": "2024-02-05T20:34:55+00:00",
+                "time": "2024-02-12T17:02:15+00:00",
                 "default-branch": true,
                 "type": "library",
+                "extra": {
+                    "hyperf": {
+                        "config": "OpenCodeCo\\Matrix\\MatrixConfigProvider"
+                    }
+                },
                 "autoload": {
                     "psr-4": {
                         "OpenCodeCo\\Matrix\\": "src/"
@@ -42,9 +47,7 @@
                     "post-install-cmd": [
                         "php bin/hyperf.php matrix:publish"
                     ],
-                    "post-autoload-dump": [
-                        "OpenCodeCo\\Matrix\\ComposerScripts::postAutoloadDump"
-                    ]
+                    "post-autoload-dump": []
                 },
                 "license": [
                     "MIT"
@@ -56,6 +59,10 @@
                     }
                 ],
                 "description": "A multi-tenant library for Hyperf APIs.",
+                "keywords": [
+                    "multi-tenancy",
+                    "saas"
+                ],
                 "support": {
                     "source": "https://github.com/opencodeco/matrix/tree/main",
                     "issues": "https://github.com/opencodeco/matrix/issues"
