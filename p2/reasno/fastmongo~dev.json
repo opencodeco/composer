@@ -3,17 +3,17 @@
         "reasno/fastmongo": [
             {
                 "name": "reasno/fastmongo",
-                "version": "dev-main",
-                "version_normalized": "dev-main",
+                "version": "dev-feat/ArmBinaries",
+                "version_normalized": "dev-feat/ArmBinaries",
                 "source": {
                     "type": "git",
                     "url": "https://github.com/opencodeco/fastmongo.git",
-                    "reference": "309412af9f4f7b100dd0d88cffa7ebaf0e37b4e1"
+                    "reference": "5a6e4aeda773f6060db5bceda96156f73ca2b4e6"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/opencodeco/fastmongo/zipball/309412af9f4f7b100dd0d88cffa7ebaf0e37b4e1",
-                    "reference": "309412af9f4f7b100dd0d88cffa7ebaf0e37b4e1",
+                    "url": "https://api.github.com/repos/opencodeco/fastmongo/zipball/5a6e4aeda773f6060db5bceda96156f73ca2b4e6",
+                    "reference": "5a6e4aeda773f6060db5bceda96156f73ca2b4e6",
                     "shasum": ""
                 },
                 "require": {
@@ -28,11 +28,12 @@
                     "phpstan/phpstan": "^1.10",
                     "swoole/ide-helper": "^5.0"
                 },
-                "time": "2023-12-13T02:15:45+00:00",
-                "default-branch": true,
+                "time": "2024-08-20T17:23:38+00:00",
                 "bin": [
                     "bin/mongo-proxy-darwin-amd64",
-                    "bin/mongo-proxy-linux-amd64"
+                    "bin/mongo-proxy-linux-amd64",
+                    "bin/mongo-proxy-darwin-arm64",
+                    "bin/mongo-proxy-linux-arm64"
                 ],
                 "type": "library",
                 "extra": {
@@ -70,7 +71,82 @@
                     "php"
                 ],
                 "support": {
-                    "source": "https://github.com/opencodeco/fastmongo/tree/main",
+                    "source": "https://github.com/opencodeco/fastmongo/tree/feat/ArmBinaries",
+                    "issues": "https://github.com/opencodeco/fastmongo/issues"
+                }
+            },
+            {
+                "name": "reasno/fastmongo",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/opencodeco/fastmongo.git",
+                    "reference": "87fc0367322934b2aa6888d7d2c91f2328943d8d"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/opencodeco/fastmongo/zipball/87fc0367322934b2aa6888d7d2c91f2328943d8d",
+                    "reference": "87fc0367322934b2aa6888d7d2c91f2328943d8d",
+                    "shasum": ""
+                },
+                "require": {
+                    "ext-mongodb": "*",
+                    "ext-swoole": ">=5.0",
+                    "hyperf/gotask": "^3.0",
+                    "php": ">=8.1"
+                },
+                "require-dev": {
+                    "friendsofphp/php-cs-fixer": "^3.21",
+                    "hyperf/testing": "^3.0",
+                    "phpstan/phpstan": "^1.10",
+                    "swoole/ide-helper": "^5.0"
+                },
+                "time": "2024-08-20T17:25:20+00:00",
+                "default-branch": true,
+                "bin": [
+                    "bin/mongo-proxy-darwin-amd64",
+                    "bin/mongo-proxy-linux-amd64",
+                    "bin/mongo-proxy-darwin-arm64",
+                    "bin/mongo-proxy-linux-arm64"
+                ],
+                "type": "library",
+                "extra": {
+                    "hyperf": {
+                        "config": "Reasno\\Fastmongo\\ConfigProvider"
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Reasno\\Fastmongo\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "HyperfTest\\": "tests"
+                    }
+                },
+                "scripts": {
+                    "test": [
+                        "co-phpunit -c phpunit.xml --colors=always"
+                    ],
+                    "analyse": [
+                        "phpstan analyse --memory-limit 300M -l 0 ./src"
+                    ],
+                    "cs-fix": [
+                        "php-cs-fixer fix $1"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "description": "mongodb driver via hyperf/gotask",
+                "keywords": [
+                    "hyperf",
+                    "php"
+                ],
+                "support": {
+                    "source": "https://github.com/opencodeco/fastmongo/tree/v3.1.0",
                     "issues": "https://github.com/opencodeco/fastmongo/issues"
                 }
             }

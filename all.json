@@ -3854,230 +3854,6 @@
                 }
             }
         },
-        "opencodeco/hyperf-doctrine": {
-            "v3.0.0": {
-                "name": "opencodeco/hyperf-doctrine",
-                "version": "v3.0.0",
-                "version_normalized": "3.0.0.0",
-                "source": {
-                    "type": "git",
-                    "url": "https://github.com/opencodeco/hyperf-doctrine.git",
-                    "reference": "80ec4416d78256fb88acc431180d5db976d23ba6"
-                },
-                "dist": {
-                    "type": "zip",
-                    "url": "https://api.github.com/repos/opencodeco/hyperf-doctrine/zipball/80ec4416d78256fb88acc431180d5db976d23ba6",
-                    "reference": "80ec4416d78256fb88acc431180d5db976d23ba6",
-                    "shasum": ""
-                },
-                "require": {
-                    "doctrine/orm": "^2.16",
-                    "ext-pdo": "*",
-                    "hyperf/db": "^3.0",
-                    "php": ">=8.1"
-                },
-                "require-dev": {
-                    "friendsofphp/php-cs-fixer": "^3.25",
-                    "mockery/mockery": "^1.6",
-                    "phpstan/phpstan": "^1.10",
-                    "phpunit/phpunit": "^10.3",
-                    "spatie/phpunit-watcher": "^1.23",
-                    "swoole/ide-helper": "^5.0"
-                },
-                "time": "2023-09-06T13:07:06+00:00",
-                "type": "library",
-                "extra": {
-                    "hyperf": {
-                        "config": "Hyperf\\Doctrine\\ConfigProvider"
-                    }
-                },
-                "autoload": {
-                    "psr-4": {
-                        "Hyperf\\Doctrine\\": "src/"
-                    }
-                },
-                "autoload-dev": {
-                    "psr-4": {
-                        "HyperfTest\\": "tests"
-                    }
-                },
-                "scripts": {
-                    "test": [
-                        "phpunit --coverage-text"
-                    ],
-                    "analyse": [
-                        "phpstan analyse --memory-limit 128M"
-                    ],
-                    "cs-fix": [
-                        "php-cs-fixer fix $1"
-                    ],
-                    "ci": [
-                        "php-cs-fixer fix --dry-run --diff --verbose",
-                        "@composer analyse",
-                        "@composer test"
-                    ]
-                },
-                "license": [
-                    "MIT"
-                ],
-                "description": "This project provides an integration for the Doctrine ORM and the Hyperf framework.",
-                "keywords": [
-                    "doctrine",
-                    "hyperf",
-                    "orm",
-                    "php"
-                ],
-                "support": {
-                    "source": "https://github.com/opencodeco/hyperf-doctrine/tree/v3.0.0"
-                }
-            },
-            "dev-main": {
-                "name": "opencodeco/hyperf-doctrine",
-                "version": "dev-main",
-                "version_normalized": "dev-main",
-                "source": {
-                    "type": "git",
-                    "url": "https://github.com/opencodeco/hyperf-doctrine.git",
-                    "reference": "a8d386a0533156e470443ba3205ddf3cd5cc8791"
-                },
-                "dist": {
-                    "type": "zip",
-                    "url": "https://api.github.com/repos/opencodeco/hyperf-doctrine/zipball/a8d386a0533156e470443ba3205ddf3cd5cc8791",
-                    "reference": "a8d386a0533156e470443ba3205ddf3cd5cc8791",
-                    "shasum": ""
-                },
-                "require": {
-                    "doctrine/orm": "^2.16",
-                    "ext-pdo": "*",
-                    "hyperf/db": "^3.0",
-                    "php": ">=8.1"
-                },
-                "require-dev": {
-                    "friendsofphp/php-cs-fixer": "^3.25",
-                    "mockery/mockery": "^1.6",
-                    "phpstan/phpstan": "^1.10",
-                    "phpunit/phpunit": "^10.3",
-                    "spatie/phpunit-watcher": "^1.23",
-                    "swoole/ide-helper": "^5.0"
-                },
-                "time": "2023-09-06T18:14:20+00:00",
-                "default-branch": true,
-                "type": "library",
-                "extra": {
-                    "hyperf": {
-                        "config": "Hyperf\\Doctrine\\ConfigProvider"
-                    }
-                },
-                "autoload": {
-                    "psr-4": {
-                        "Hyperf\\Doctrine\\": "src/"
-                    }
-                },
-                "autoload-dev": {
-                    "psr-4": {
-                        "HyperfTest\\": "tests"
-                    }
-                },
-                "scripts": {
-                    "test": [
-                        "phpunit --coverage-text"
-                    ],
-                    "analyse": [
-                        "phpstan analyse --memory-limit 128M"
-                    ],
-                    "cs-fix": [
-                        "php-cs-fixer fix $1"
-                    ],
-                    "ci": [
-                        "php-cs-fixer fix --dry-run --diff --verbose",
-                        "@composer analyse",
-                        "@composer test"
-                    ]
-                },
-                "license": [
-                    "MIT"
-                ],
-                "description": "This project provides an integration for the Doctrine ORM and the Hyperf framework.",
-                "keywords": [
-                    "doctrine",
-                    "hyperf",
-                    "orm",
-                    "php"
-                ],
-                "support": {
-                    "source": "https://github.com/opencodeco/hyperf-doctrine/tree/main"
-                }
-            }
-        },
-        "opencodeco/matrix": {
-            "dev-main": {
-                "name": "opencodeco/matrix",
-                "version": "dev-main",
-                "version_normalized": "dev-main",
-                "source": {
-                    "type": "git",
-                    "url": "https://github.com/opencodeco/matrix.git",
-                    "reference": "d35315ab0018beb34985a85c87fef440b3e10f16"
-                },
-                "dist": {
-                    "type": "zip",
-                    "url": "https://api.github.com/repos/opencodeco/matrix/zipball/d35315ab0018beb34985a85c87fef440b3e10f16",
-                    "reference": "d35315ab0018beb34985a85c87fef440b3e10f16",
-                    "shasum": ""
-                },
-                "require": {
-                    "hyperf/command": "^3.0",
-                    "hyperf/database": "^3.0",
-                    "hyperf/db-connection": "*",
-                    "hyperf/di": "^3.0",
-                    "php": "^8.0"
-                },
-                "require-dev": {
-                    "hyperf/testing": "^3.0",
-                    "phpunit/phpunit": "^9.0"
-                },
-                "time": "2024-02-12T17:02:15+00:00",
-                "default-branch": true,
-                "type": "library",
-                "extra": {
-                    "hyperf": {
-                        "config": "OpenCodeCo\\Matrix\\MatrixConfigProvider"
-                    }
-                },
-                "autoload": {
-                    "psr-4": {
-                        "OpenCodeCo\\Matrix\\": "src/"
-                    }
-                },
-                "scripts": {
-                    "post-update-cmd": [
-                        "php bin/hyperf.php matrix:publish"
-                    ],
-                    "post-install-cmd": [
-                        "php bin/hyperf.php matrix:publish"
-                    ],
-                    "post-autoload-dump": []
-                },
-                "license": [
-                    "MIT"
-                ],
-                "authors": [
-                    {
-                        "name": "Diego Ananias",
-                        "email": "diegohsananias@gmail.com"
-                    }
-                ],
-                "description": "A multi-tenant library for Hyperf APIs.",
-                "keywords": [
-                    "multi-tenancy",
-                    "saas"
-                ],
-                "support": {
-                    "source": "https://github.com/opencodeco/matrix/tree/main",
-                    "issues": "https://github.com/opencodeco/matrix/issues"
-                }
-            }
-        },
         "reasno/fastmongo": {
             "v3.0.0": {
                 "name": "reasno/fastmongo",
@@ -4151,19 +3927,19 @@
                     "issues": "https://github.com/opencodeco/fastmongo/issues"
                 }
             },
-            "dev-main": {
+            "v3.1.0": {
                 "name": "reasno/fastmongo",
-                "version": "dev-main",
-                "version_normalized": "dev-main",
+                "version": "v3.1.0",
+                "version_normalized": "3.1.0.0",
                 "source": {
                     "type": "git",
                     "url": "https://github.com/opencodeco/fastmongo.git",
-                    "reference": "309412af9f4f7b100dd0d88cffa7ebaf0e37b4e1"
+                    "reference": "87fc0367322934b2aa6888d7d2c91f2328943d8d"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/opencodeco/fastmongo/zipball/309412af9f4f7b100dd0d88cffa7ebaf0e37b4e1",
-                    "reference": "309412af9f4f7b100dd0d88cffa7ebaf0e37b4e1",
+                    "url": "https://api.github.com/repos/opencodeco/fastmongo/zipball/87fc0367322934b2aa6888d7d2c91f2328943d8d",
+                    "reference": "87fc0367322934b2aa6888d7d2c91f2328943d8d",
                     "shasum": ""
                 },
                 "require": {
@@ -4178,11 +3954,12 @@
                     "phpstan/phpstan": "^1.10",
                     "swoole/ide-helper": "^5.0"
                 },
-                "time": "2023-12-13T02:15:45+00:00",
-                "default-branch": true,
+                "time": "2024-08-20T17:25:20+00:00",
                 "bin": [
                     "bin/mongo-proxy-darwin-amd64",
-                    "bin/mongo-proxy-linux-amd64"
+                    "bin/mongo-proxy-linux-amd64",
+                    "bin/mongo-proxy-darwin-arm64",
+                    "bin/mongo-proxy-linux-arm64"
                 ],
                 "type": "library",
                 "extra": {
@@ -4220,7 +3997,156 @@
                     "php"
                 ],
                 "support": {
-                    "source": "https://github.com/opencodeco/fastmongo/tree/main",
+                    "source": "https://github.com/opencodeco/fastmongo/tree/v3.1.0",
+                    "issues": "https://github.com/opencodeco/fastmongo/issues"
+                }
+            },
+            "dev-feat/ArmBinaries": {
+                "name": "reasno/fastmongo",
+                "version": "dev-feat/ArmBinaries",
+                "version_normalized": "dev-feat/ArmBinaries",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/opencodeco/fastmongo.git",
+                    "reference": "5a6e4aeda773f6060db5bceda96156f73ca2b4e6"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/opencodeco/fastmongo/zipball/5a6e4aeda773f6060db5bceda96156f73ca2b4e6",
+                    "reference": "5a6e4aeda773f6060db5bceda96156f73ca2b4e6",
+                    "shasum": ""
+                },
+                "require": {
+                    "ext-mongodb": "*",
+                    "ext-swoole": ">=5.0",
+                    "hyperf/gotask": "^3.0",
+                    "php": ">=8.1"
+                },
+                "require-dev": {
+                    "friendsofphp/php-cs-fixer": "^3.21",
+                    "hyperf/testing": "^3.0",
+                    "phpstan/phpstan": "^1.10",
+                    "swoole/ide-helper": "^5.0"
+                },
+                "time": "2024-08-20T17:23:38+00:00",
+                "bin": [
+                    "bin/mongo-proxy-darwin-amd64",
+                    "bin/mongo-proxy-linux-amd64",
+                    "bin/mongo-proxy-darwin-arm64",
+                    "bin/mongo-proxy-linux-arm64"
+                ],
+                "type": "library",
+                "extra": {
+                    "hyperf": {
+                        "config": "Reasno\\Fastmongo\\ConfigProvider"
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Reasno\\Fastmongo\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "HyperfTest\\": "tests"
+                    }
+                },
+                "scripts": {
+                    "test": [
+                        "co-phpunit -c phpunit.xml --colors=always"
+                    ],
+                    "analyse": [
+                        "phpstan analyse --memory-limit 300M -l 0 ./src"
+                    ],
+                    "cs-fix": [
+                        "php-cs-fixer fix $1"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "description": "mongodb driver via hyperf/gotask",
+                "keywords": [
+                    "hyperf",
+                    "php"
+                ],
+                "support": {
+                    "source": "https://github.com/opencodeco/fastmongo/tree/feat/ArmBinaries",
+                    "issues": "https://github.com/opencodeco/fastmongo/issues"
+                }
+            },
+            "dev-main": {
+                "name": "reasno/fastmongo",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/opencodeco/fastmongo.git",
+                    "reference": "87fc0367322934b2aa6888d7d2c91f2328943d8d"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/opencodeco/fastmongo/zipball/87fc0367322934b2aa6888d7d2c91f2328943d8d",
+                    "reference": "87fc0367322934b2aa6888d7d2c91f2328943d8d",
+                    "shasum": ""
+                },
+                "require": {
+                    "ext-mongodb": "*",
+                    "ext-swoole": ">=5.0",
+                    "hyperf/gotask": "^3.0",
+                    "php": ">=8.1"
+                },
+                "require-dev": {
+                    "friendsofphp/php-cs-fixer": "^3.21",
+                    "hyperf/testing": "^3.0",
+                    "phpstan/phpstan": "^1.10",
+                    "swoole/ide-helper": "^5.0"
+                },
+                "time": "2024-08-20T17:25:20+00:00",
+                "default-branch": true,
+                "bin": [
+                    "bin/mongo-proxy-darwin-amd64",
+                    "bin/mongo-proxy-linux-amd64",
+                    "bin/mongo-proxy-darwin-arm64",
+                    "bin/mongo-proxy-linux-arm64"
+                ],
+                "type": "library",
+                "extra": {
+                    "hyperf": {
+                        "config": "Reasno\\Fastmongo\\ConfigProvider"
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Reasno\\Fastmongo\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "HyperfTest\\": "tests"
+                    }
+                },
+                "scripts": {
+                    "test": [
+                        "co-phpunit -c phpunit.xml --colors=always"
+                    ],
+                    "analyse": [
+                        "phpstan analyse --memory-limit 300M -l 0 ./src"
+                    ],
+                    "cs-fix": [
+                        "php-cs-fixer fix $1"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "description": "mongodb driver via hyperf/gotask",
+                "keywords": [
+                    "hyperf",
+                    "php"
+                ],
+                "support": {
+                    "source": "https://github.com/opencodeco/fastmongo/tree/v3.1.0",
                     "issues": "https://github.com/opencodeco/fastmongo/issues"
                 }
             }
