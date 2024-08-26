@@ -2396,6 +2396,145 @@
                 }
             }
         },
+        "hyperf/testing": {
+            "3.1.0": {
+                "name": "hyperf/testing",
+                "version": "3.1.0",
+                "version_normalized": "3.1.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/opencodeco/hyperf-testing.git",
+                    "reference": "83a5658a8703f2f5a14a75c3b73be8a2e6d342c4"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/opencodeco/hyperf-testing/zipball/83a5658a8703f2f5a14a75c3b73be8a2e6d342c4",
+                    "reference": "83a5658a8703f2f5a14a75c3b73be8a2e6d342c4",
+                    "shasum": ""
+                },
+                "require": {
+                    "hyperf/codec": "~3.1.0",
+                    "hyperf/collection": "~3.1.0",
+                    "hyperf/contract": "~3.1.0",
+                    "hyperf/coroutine": "~3.1.0",
+                    "hyperf/database": "^3.1",
+                    "hyperf/database-sqlite": "^3.1",
+                    "hyperf/http-message": "~3.1.0",
+                    "hyperf/http-server": "~3.1.0",
+                    "hyperf/support": "~3.1.0",
+                    "hyperf/utils": "~3.1.0",
+                    "php": ">=8.1",
+                    "phpunit/phpunit": "^10.0",
+                    "psr/container": "^1.0 || ^2.0",
+                    "symfony/http-foundation": "^5.4 || ^6.0"
+                },
+                "suggest": {
+                    "fakerphp/faker": "Required to use Faker feature.(^1.23)"
+                },
+                "time": "2024-07-14T06:25:48+00:00",
+                "bin": [
+                    "co-phpunit"
+                ],
+                "type": "library",
+                "extra": {
+                    "branch-alias": {
+                        "dev-master": "3.1-dev"
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Hyperf\\Testing\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "HyperfTest\\Testing\\": "tests/"
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "description": "Testing for hyperf",
+                "keywords": [
+                    "dev",
+                    "php",
+                    "swoole",
+                    "testing"
+                ],
+                "support": {
+                    "source": "https://github.com/opencodeco/hyperf-testing/tree/3.1.0"
+                }
+            },
+            "dev-master": {
+                "name": "hyperf/testing",
+                "version": "dev-master",
+                "version_normalized": "dev-master",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/opencodeco/hyperf-testing.git",
+                    "reference": "83a5658a8703f2f5a14a75c3b73be8a2e6d342c4"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/opencodeco/hyperf-testing/zipball/83a5658a8703f2f5a14a75c3b73be8a2e6d342c4",
+                    "reference": "83a5658a8703f2f5a14a75c3b73be8a2e6d342c4",
+                    "shasum": ""
+                },
+                "require": {
+                    "hyperf/codec": "~3.1.0",
+                    "hyperf/collection": "~3.1.0",
+                    "hyperf/contract": "~3.1.0",
+                    "hyperf/coroutine": "~3.1.0",
+                    "hyperf/database": "^3.1",
+                    "hyperf/database-sqlite": "^3.1",
+                    "hyperf/http-message": "~3.1.0",
+                    "hyperf/http-server": "~3.1.0",
+                    "hyperf/support": "~3.1.0",
+                    "hyperf/utils": "~3.1.0",
+                    "php": ">=8.1",
+                    "phpunit/phpunit": "^10.0",
+                    "psr/container": "^1.0 || ^2.0",
+                    "symfony/http-foundation": "^5.4 || ^6.0"
+                },
+                "suggest": {
+                    "fakerphp/faker": "Required to use Faker feature.(^1.23)"
+                },
+                "time": "2024-07-14T06:25:48+00:00",
+                "default-branch": true,
+                "bin": [
+                    "co-phpunit"
+                ],
+                "type": "library",
+                "extra": {
+                    "branch-alias": {
+                        "dev-master": "3.1-dev"
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Hyperf\\Testing\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "HyperfTest\\Testing\\": "tests/"
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "description": "Testing for hyperf",
+                "keywords": [
+                    "dev",
+                    "php",
+                    "swoole",
+                    "testing"
+                ],
+                "support": {
+                    "source": "https://github.com/opencodeco/hyperf-testing/tree/3.1.0"
+                }
+            }
+        },
         "hyperf/tracer": {
             "v3.0.0": {
                 "name": "hyperf/tracer",
@@ -3851,6 +3990,161 @@
                     "issues": "https://github.com/hyperf/hyperf/issues",
                     "pull-request": "https://github.com/hyperf/hyperf/pulls",
                     "source": "https://github.com/hyperf/hyperf"
+                }
+            }
+        },
+        "opencodeco/hyperf-doctrine": {
+            "v3.0.0": {
+                "name": "opencodeco/hyperf-doctrine",
+                "version": "v3.0.0",
+                "version_normalized": "3.0.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/opencodeco/hyperf-doctrine.git",
+                    "reference": "80ec4416d78256fb88acc431180d5db976d23ba6"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/opencodeco/hyperf-doctrine/zipball/80ec4416d78256fb88acc431180d5db976d23ba6",
+                    "reference": "80ec4416d78256fb88acc431180d5db976d23ba6",
+                    "shasum": ""
+                },
+                "require": {
+                    "doctrine/orm": "^2.16",
+                    "ext-pdo": "*",
+                    "hyperf/db": "^3.0",
+                    "php": ">=8.1"
+                },
+                "require-dev": {
+                    "friendsofphp/php-cs-fixer": "^3.25",
+                    "mockery/mockery": "^1.6",
+                    "phpstan/phpstan": "^1.10",
+                    "phpunit/phpunit": "^10.3",
+                    "spatie/phpunit-watcher": "^1.23",
+                    "swoole/ide-helper": "^5.0"
+                },
+                "time": "2023-09-06T13:07:06+00:00",
+                "type": "library",
+                "extra": {
+                    "hyperf": {
+                        "config": "Hyperf\\Doctrine\\ConfigProvider"
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Hyperf\\Doctrine\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "HyperfTest\\": "tests"
+                    }
+                },
+                "scripts": {
+                    "test": [
+                        "phpunit --coverage-text"
+                    ],
+                    "analyse": [
+                        "phpstan analyse --memory-limit 128M"
+                    ],
+                    "cs-fix": [
+                        "php-cs-fixer fix $1"
+                    ],
+                    "ci": [
+                        "php-cs-fixer fix --dry-run --diff --verbose",
+                        "@composer analyse",
+                        "@composer test"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "description": "This project provides an integration for the Doctrine ORM and the Hyperf framework.",
+                "keywords": [
+                    "doctrine",
+                    "hyperf",
+                    "orm",
+                    "php"
+                ],
+                "support": {
+                    "source": "https://github.com/opencodeco/hyperf-doctrine/tree/v3.0.0"
+                }
+            },
+            "dev-main": {
+                "name": "opencodeco/hyperf-doctrine",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/opencodeco/hyperf-doctrine.git",
+                    "reference": "a8d386a0533156e470443ba3205ddf3cd5cc8791"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/opencodeco/hyperf-doctrine/zipball/a8d386a0533156e470443ba3205ddf3cd5cc8791",
+                    "reference": "a8d386a0533156e470443ba3205ddf3cd5cc8791",
+                    "shasum": ""
+                },
+                "require": {
+                    "doctrine/orm": "^2.16",
+                    "ext-pdo": "*",
+                    "hyperf/db": "^3.0",
+                    "php": ">=8.1"
+                },
+                "require-dev": {
+                    "friendsofphp/php-cs-fixer": "^3.25",
+                    "mockery/mockery": "^1.6",
+                    "phpstan/phpstan": "^1.10",
+                    "phpunit/phpunit": "^10.3",
+                    "spatie/phpunit-watcher": "^1.23",
+                    "swoole/ide-helper": "^5.0"
+                },
+                "time": "2023-09-06T18:14:20+00:00",
+                "default-branch": true,
+                "type": "library",
+                "extra": {
+                    "hyperf": {
+                        "config": "Hyperf\\Doctrine\\ConfigProvider"
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Hyperf\\Doctrine\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "HyperfTest\\": "tests"
+                    }
+                },
+                "scripts": {
+                    "test": [
+                        "phpunit --coverage-text"
+                    ],
+                    "analyse": [
+                        "phpstan analyse --memory-limit 128M"
+                    ],
+                    "cs-fix": [
+                        "php-cs-fixer fix $1"
+                    ],
+                    "ci": [
+                        "php-cs-fixer fix --dry-run --diff --verbose",
+                        "@composer analyse",
+                        "@composer test"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "description": "This project provides an integration for the Doctrine ORM and the Hyperf framework.",
+                "keywords": [
+                    "doctrine",
+                    "hyperf",
+                    "orm",
+                    "php"
+                ],
+                "support": {
+                    "source": "https://github.com/opencodeco/hyperf-doctrine/tree/main"
                 }
             }
         },

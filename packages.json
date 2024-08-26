@@ -2,14 +2,16 @@
     "packages": [],
     "includes": {
         "all.json": {
-            "sha1": "8261a6efa6c9c29a983f7cf2eeeb8f4a63e79d57"
+            "sha1": "a8f9efbef429210a366e2a93c3e0b33ba69a3dca"
         }
     },
     "metadata-url": "/p2/%package%.json",
     "available-packages": [
         "hyperf/gotask",
         "hyperf/metric",
+        "hyperf/testing",
         "hyperf/tracer",
+        "opencodeco/hyperf-doctrine",
         "reasno/fastmongo"
     ]
 }
