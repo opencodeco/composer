@@ -20,9 +20,6 @@
 	"url": "https://github.com/opencodeco/hyperf-doctrine"
     }, {
 	"type": "vcs",
-	"url": "https://github.com/opencodeco/matrix"
-    }, {
-	"type": "vcs",
 	"url": "https://github.com/opencodeco/hyperf-testing"
     }]
 }
