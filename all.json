@@ -2533,19 +2533,19 @@
                     "source": "https://github.com/opencodeco/hyperf-testing/tree/3.1.1"
                 }
             },
-            "dev-master": {
+            "3.1.2": {
                 "name": "hyperf/testing",
-                "version": "dev-master",
-                "version_normalized": "dev-master",
+                "version": "3.1.2",
+                "version_normalized": "3.1.2.0",
                 "source": {
                     "type": "git",
                     "url": "https://github.com/opencodeco/hyperf-testing.git",
-                    "reference": "c5749f8f8c89f93613e35d7dd05b8c49189cd27d"
+                    "reference": "e419725c3a55815f48e9980f7f105d74d8f709b6"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/opencodeco/hyperf-testing/zipball/c5749f8f8c89f93613e35d7dd05b8c49189cd27d",
-                    "reference": "c5749f8f8c89f93613e35d7dd05b8c49189cd27d",
+                    "url": "https://api.github.com/repos/opencodeco/hyperf-testing/zipball/e419725c3a55815f48e9980f7f105d74d8f709b6",
+                    "reference": "e419725c3a55815f48e9980f7f105d74d8f709b6",
                     "shasum": ""
                 },
                 "require": {
@@ -2567,7 +2567,211 @@
                 "suggest": {
                     "fakerphp/faker": "Required to use Faker feature.(^1.23)"
                 },
-                "time": "2024-09-04T14:31:31+00:00",
+                "time": "2024-09-04T19:35:07+00:00",
+                "bin": [
+                    "co-phpunit"
+                ],
+                "type": "library",
+                "extra": {
+                    "branch-alias": {
+                        "dev-master": "3.1-dev"
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Hyperf\\Testing\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "HyperfTest\\Testing\\": "tests/"
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "description": "Testing for hyperf",
+                "keywords": [
+                    "dev",
+                    "php",
+                    "swoole",
+                    "testing"
+                ],
+                "support": {
+                    "source": "https://github.com/opencodeco/hyperf-testing/tree/3.1.2"
+                }
+            },
+            "3.1.3": {
+                "name": "hyperf/testing",
+                "version": "3.1.3",
+                "version_normalized": "3.1.3.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/opencodeco/hyperf-testing.git",
+                    "reference": "c27a6b518a28f331e4f388751ada77f69c373f93"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/opencodeco/hyperf-testing/zipball/c27a6b518a28f331e4f388751ada77f69c373f93",
+                    "reference": "c27a6b518a28f331e4f388751ada77f69c373f93",
+                    "shasum": ""
+                },
+                "require": {
+                    "hyperf/codec": "~3.1.0",
+                    "hyperf/collection": "~3.1.0",
+                    "hyperf/contract": "~3.1.0",
+                    "hyperf/coroutine": "~3.1.0",
+                    "hyperf/database": "^3.1",
+                    "hyperf/database-sqlite": "^3.1",
+                    "hyperf/http-message": "~3.1.0",
+                    "hyperf/http-server": "~3.1.0",
+                    "hyperf/support": "~3.1.0",
+                    "hyperf/utils": "~3.1.0",
+                    "php": ">=8.1",
+                    "phpunit/phpunit": "^10.0",
+                    "psr/container": "^1.0 || ^2.0",
+                    "symfony/http-foundation": "^5.4 || ^6.0"
+                },
+                "suggest": {
+                    "fakerphp/faker": "Required to use Faker feature.(^1.23)"
+                },
+                "time": "2024-09-04T19:38:05+00:00",
+                "bin": [
+                    "co-phpunit"
+                ],
+                "type": "library",
+                "extra": {
+                    "branch-alias": {
+                        "dev-master": "3.1-dev"
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Hyperf\\Testing\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "HyperfTest\\Testing\\": "tests/"
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "description": "Testing for hyperf",
+                "keywords": [
+                    "dev",
+                    "php",
+                    "swoole",
+                    "testing"
+                ],
+                "support": {
+                    "source": "https://github.com/opencodeco/hyperf-testing/tree/3.1.3"
+                }
+            },
+            "3.1.4": {
+                "name": "hyperf/testing",
+                "version": "3.1.4",
+                "version_normalized": "3.1.4.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/opencodeco/hyperf-testing.git",
+                    "reference": "7889698ee619c38ff5d178e7756f4c629e7f9a6c"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/opencodeco/hyperf-testing/zipball/7889698ee619c38ff5d178e7756f4c629e7f9a6c",
+                    "reference": "7889698ee619c38ff5d178e7756f4c629e7f9a6c",
+                    "shasum": ""
+                },
+                "require": {
+                    "hyperf/codec": "~3.1.0",
+                    "hyperf/collection": "~3.1.0",
+                    "hyperf/contract": "~3.1.0",
+                    "hyperf/coroutine": "~3.1.0",
+                    "hyperf/database": "^3.1",
+                    "hyperf/database-sqlite": "^3.1",
+                    "hyperf/http-message": "~3.1.0",
+                    "hyperf/http-server": "~3.1.0",
+                    "hyperf/support": "~3.1.0",
+                    "hyperf/utils": "~3.1.0",
+                    "php": ">=8.1",
+                    "phpunit/phpunit": "^10.0",
+                    "psr/container": "^1.0 || ^2.0",
+                    "symfony/http-foundation": "^5.4 || ^6.0"
+                },
+                "suggest": {
+                    "fakerphp/faker": "Required to use Faker feature.(^1.23)"
+                },
+                "time": "2024-09-04T19:50:01+00:00",
+                "bin": [
+                    "co-phpunit"
+                ],
+                "type": "library",
+                "extra": {
+                    "branch-alias": {
+                        "dev-master": "3.1-dev"
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Hyperf\\Testing\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "HyperfTest\\Testing\\": "tests/"
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "description": "Testing for hyperf",
+                "keywords": [
+                    "dev",
+                    "php",
+                    "swoole",
+                    "testing"
+                ],
+                "support": {
+                    "source": "https://github.com/opencodeco/hyperf-testing/tree/3.1.4"
+                }
+            },
+            "dev-master": {
+                "name": "hyperf/testing",
+                "version": "dev-master",
+                "version_normalized": "dev-master",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/opencodeco/hyperf-testing.git",
+                    "reference": "7889698ee619c38ff5d178e7756f4c629e7f9a6c"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/opencodeco/hyperf-testing/zipball/7889698ee619c38ff5d178e7756f4c629e7f9a6c",
+                    "reference": "7889698ee619c38ff5d178e7756f4c629e7f9a6c",
+                    "shasum": ""
+                },
+                "require": {
+                    "hyperf/codec": "~3.1.0",
+                    "hyperf/collection": "~3.1.0",
+                    "hyperf/contract": "~3.1.0",
+                    "hyperf/coroutine": "~3.1.0",
+                    "hyperf/database": "^3.1",
+                    "hyperf/database-sqlite": "^3.1",
+                    "hyperf/http-message": "~3.1.0",
+                    "hyperf/http-server": "~3.1.0",
+                    "hyperf/support": "~3.1.0",
+                    "hyperf/utils": "~3.1.0",
+                    "php": ">=8.1",
+                    "phpunit/phpunit": "^10.0",
+                    "psr/container": "^1.0 || ^2.0",
+                    "symfony/http-foundation": "^5.4 || ^6.0"
+                },
+                "suggest": {
+                    "fakerphp/faker": "Required to use Faker feature.(^1.23)"
+                },
+                "time": "2024-09-04T19:50:01+00:00",
                 "default-branch": true,
                 "bin": [
                     "co-phpunit"
@@ -2599,7 +2803,7 @@
                     "testing"
                 ],
                 "support": {
-                    "source": "https://github.com/opencodeco/hyperf-testing/tree/3.1.1"
+                    "source": "https://github.com/opencodeco/hyperf-testing/tree/3.1.4"
                 }
             }
         },
