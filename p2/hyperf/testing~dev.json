@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/opencodeco/hyperf-testing.git",
-                    "reference": "7889698ee619c38ff5d178e7756f4c629e7f9a6c"
+                    "reference": "686e05f2dfb5e0b82112d7f355fbae330639af55"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/opencodeco/hyperf-testing/zipball/7889698ee619c38ff5d178e7756f4c629e7f9a6c",
-                    "reference": "7889698ee619c38ff5d178e7756f4c629e7f9a6c",
+                    "url": "https://api.github.com/repos/opencodeco/hyperf-testing/zipball/686e05f2dfb5e0b82112d7f355fbae330639af55",
+                    "reference": "686e05f2dfb5e0b82112d7f355fbae330639af55",
                     "shasum": ""
                 },
                 "require": {
@@ -35,7 +35,7 @@
                 "suggest": {
                     "fakerphp/faker": "Required to use Faker feature.(^1.23)"
                 },
-                "time": "2024-09-04T19:50:01+00:00",
+                "time": "2024-09-06T17:39:56+00:00",
                 "default-branch": true,
                 "bin": [
                     "co-phpunit"
@@ -67,7 +67,7 @@
                     "testing"
                 ],
                 "support": {
-                    "source": "https://github.com/opencodeco/hyperf-testing/tree/3.1.4"
+                    "source": "https://github.com/opencodeco/hyperf-testing/tree/3.1.5"
                 }
             }
         ]
