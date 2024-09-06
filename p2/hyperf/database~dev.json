@@ -1,0 +1,75 @@
+{
+    "packages": {
+        "hyperf/database": [
+            {
+                "name": "hyperf/database",
+                "version": "dev-master",
+                "version_normalized": "dev-master",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/opencodeco/hyperf-database.git",
+                    "reference": "2ac6c65919e675bcca8f9fb18155e64ad91f4b6f"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/opencodeco/hyperf-database/zipball/2ac6c65919e675bcca8f9fb18155e64ad91f4b6f",
+                    "reference": "2ac6c65919e675bcca8f9fb18155e64ad91f4b6f",
+                    "shasum": ""
+                },
+                "require": {
+                    "hyperf/code-parser": "~3.1.0",
+                    "hyperf/collection": "~3.1.0",
+                    "hyperf/conditionable": "~3.1.0",
+                    "hyperf/macroable": "~3.1.0",
+                    "hyperf/support": "~3.1.0",
+                    "hyperf/tappable": "~3.1.0",
+                    "hyperf/utils": "~3.1.0",
+                    "nesbot/carbon": "^2.0",
+                    "php": ">=8.1",
+                    "psr/container": "^1.0 || ^2.0",
+                    "psr/event-dispatcher": "^1.0"
+                },
+                "suggest": {
+                    "doctrine/dbal": "Required to rename columns (^3.0).",
+                    "hyperf/paginator": "Required to paginate the result set (~3.1.0).",
+                    "nikic/php-parser": "Required to use ModelCommand. (^4.0)",
+                    "php-di/phpdoc-reader": "Required to use ModelCommand. (^2.2)"
+                },
+                "time": "2024-09-06T17:50:32+00:00",
+                "default-branch": true,
+                "type": "library",
+                "extra": {
+                    "branch-alias": {
+                        "dev-master": "3.1-dev"
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Hyperf\\Database\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "HyperfTest\\Database\\": "tests/"
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "description": "A flexible database library.",
+                "homepage": "https://hyperf.io",
+                "keywords": [
+                    "database",
+                    "hyperf",
+                    "php"
+                ],
+                "support": {
+                    "issues": "https://github.com/hyperf/hyperf/issues",
+                    "source": "https://github.com/hyperf/hyperf",
+                    "docs": "https://hyperf.wiki",
+                    "pull-request": "https://github.com/hyperf/hyperf/pulls"
+                }
+            }
+        ]
+    }
+}
