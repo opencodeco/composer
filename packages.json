@@ -2,12 +2,11 @@
     "packages": [],
     "includes": {
         "all.json": {
-            "sha1": "688c63d9c666cb3f4e73aa667bdae93ec1a229c2"
+            "sha1": "c2e403e591dc3243b591a0fd26524a714e5a0f81"
         }
     },
     "metadata-url": "/p2/%package%.json",
     "available-packages": [
-        "hyperf/database",
         "hyperf/gotask",
         "hyperf/metric",
         "hyperf/testing",
