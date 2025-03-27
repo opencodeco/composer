@@ -2618,19 +2618,19 @@
                     "issues": "https://github.com/opencodeco/hyperf-metric/issues"
                 }
             },
-            "dev-main": {
+            "v3.5.0": {
                 "name": "hyperf/metric",
-                "version": "dev-main",
-                "version_normalized": "dev-main",
+                "version": "v3.5.0",
+                "version_normalized": "3.5.0.0",
                 "source": {
                     "type": "git",
                     "url": "https://github.com/opencodeco/hyperf-metric.git",
-                    "reference": "373a6544c43ee3a47e3056290d064257c5e0b2ab"
+                    "reference": "9819eddb8b1633130ed8c2cf0553a54a164ef9b5"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/opencodeco/hyperf-metric/zipball/373a6544c43ee3a47e3056290d064257c5e0b2ab",
-                    "reference": "373a6544c43ee3a47e3056290d064257c5e0b2ab",
+                    "url": "https://api.github.com/repos/opencodeco/hyperf-metric/zipball/9819eddb8b1633130ed8c2cf0553a54a164ef9b5",
+                    "reference": "9819eddb8b1633130ed8c2cf0553a54a164ef9b5",
                     "shasum": ""
                 },
                 "require": {
@@ -2676,8 +2676,7 @@
                     "promphp/prometheus_client_php": "Required to use Prometheus driver.(2.2.*)",
                     "slickdeals/statsd": "Required to use StatdD driver."
                 },
-                "time": "2025-03-06T16:13:30+00:00",
-                "default-branch": true,
+                "time": "2025-03-27T16:30:51+00:00",
                 "type": "library",
                 "extra": {
                     "branch-alias": {
@@ -2700,6 +2699,9 @@
                 "scripts": {
                     "test": [
                         "co-phpunit"
+                    ],
+                    "test:filter": [
+                        "co-phpunit --prepend test/bootstrap.php -c phpunit.xml --colors=always --testdox --filter"
                     ],
                     "test-coverage": [
                         "co-phpunit --coverage-clover clover.xml"
@@ -2727,7 +2729,123 @@
                     "statsd"
                 ],
                 "support": {
-                    "source": "https://github.com/opencodeco/hyperf-metric/tree/v3.4.0",
+                    "source": "https://github.com/opencodeco/hyperf-metric/tree/v3.5.0",
+                    "issues": "https://github.com/opencodeco/hyperf-metric/issues"
+                }
+            },
+            "dev-main": {
+                "name": "hyperf/metric",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/opencodeco/hyperf-metric.git",
+                    "reference": "9819eddb8b1633130ed8c2cf0553a54a164ef9b5"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/opencodeco/hyperf-metric/zipball/9819eddb8b1633130ed8c2cf0553a54a164ef9b5",
+                    "reference": "9819eddb8b1633130ed8c2cf0553a54a164ef9b5",
+                    "shasum": ""
+                },
+                "require": {
+                    "hyperf/codec": "~3.1.0",
+                    "hyperf/contract": "~3.1.0",
+                    "hyperf/engine": "^2.3",
+                    "hyperf/guzzle": "~3.1.0",
+                    "hyperf/support": "~3.1.0",
+                    "hyperf/utils": "~3.1.0",
+                    "php": ">=8.1",
+                    "promphp/prometheus_client_php": "^2.7",
+                    "psr/container": "^1.0|^2.0",
+                    "psr/event-dispatcher": "^1.0",
+                    "psr/http-message": "^1.0|^2.0"
+                },
+                "require-dev": {
+                    "friendsofphp/php-cs-fixer": "^3.21",
+                    "hyperf/async-queue": "^3.0",
+                    "hyperf/config": "^3.0",
+                    "hyperf/db-connection": "^3.0",
+                    "hyperf/di": "^3.0",
+                    "hyperf/event": "^3.0",
+                    "hyperf/framework": "^3.0",
+                    "hyperf/process": "^3.0",
+                    "hyperf/redis": "^3.0",
+                    "hyperf/testing": "^3.0",
+                    "influxdb/influxdb-php": "^1.15",
+                    "mockery/mockery": "^1.6",
+                    "phpstan/extension-installer": "^1.3",
+                    "phpstan/phpstan": "^1.10",
+                    "phpstan/phpstan-mockery": "^1.1",
+                    "rector/rector": "^0.17.5",
+                    "slickdeals/statsd": "^3.1",
+                    "swoole/ide-helper": "^5.0"
+                },
+                "suggest": {
+                    "hyperf/di": "Required to use annotations.",
+                    "hyperf/event": "Required to use listeners for default metrics.",
+                    "hyperf/http-server": "Required to capture routes in middleware.",
+                    "hyperf/process": "Required to use standalone process, or you have to roll your own",
+                    "hyperf/retry": "Required to use back-off retry implementation.",
+                    "influxdb/influxdb-php": "Required to use InfluxDB driver.",
+                    "promphp/prometheus_client_php": "Required to use Prometheus driver.(2.2.*)",
+                    "slickdeals/statsd": "Required to use StatdD driver."
+                },
+                "time": "2025-03-27T16:30:51+00:00",
+                "default-branch": true,
+                "type": "library",
+                "extra": {
+                    "branch-alias": {
+                        "dev-master": "3.1-dev"
+                    },
+                    "hyperf": {
+                        "config": "Hyperf\\Metric\\ConfigProvider"
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Hyperf\\Metric\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "HyperfTest\\Metric\\": "tests/"
+                    }
+                },
+                "scripts": {
+                    "test": [
+                        "co-phpunit"
+                    ],
+                    "test:filter": [
+                        "co-phpunit --prepend test/bootstrap.php -c phpunit.xml --colors=always --testdox --filter"
+                    ],
+                    "test-coverage": [
+                        "co-phpunit --coverage-clover clover.xml"
+                    ],
+                    "cs-fix": [
+                        "php-cs-fixer fix $1"
+                    ],
+                    "analyse": [
+                        "phpstan analyse --memory-limit=-1 -l 5 -c phpstan.neon"
+                    ],
+                    "rector": [
+                        "rector process --clear-cache"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "description": "Drop-in replacement for the Hyperf Metric component.",
+                "keywords": [
+                    "hyperf",
+                    "influxdb",
+                    "metrics",
+                    "php",
+                    "prometheus",
+                    "statsd"
+                ],
+                "support": {
+                    "source": "https://github.com/opencodeco/hyperf-metric/tree/v3.5.0",
                     "issues": "https://github.com/opencodeco/hyperf-metric/issues"
                 }
             }
@@ -4965,12 +5083,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/opencodeco/hyperf-tracer.git",
-                    "reference": "63c76a5c20a6503e693fc71a36d64d7fcd1b6152"
+                    "reference": "f9751db4b9475f6f740eaba2b474310135e7ddfc"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/opencodeco/hyperf-tracer/zipball/63c76a5c20a6503e693fc71a36d64d7fcd1b6152",
-                    "reference": "63c76a5c20a6503e693fc71a36d64d7fcd1b6152",
+                    "url": "https://api.github.com/repos/opencodeco/hyperf-tracer/zipball/f9751db4b9475f6f740eaba2b474310135e7ddfc",
+                    "reference": "f9751db4b9475f6f740eaba2b474310135e7ddfc",
                     "shasum": ""
                 },
                 "require": {
@@ -4999,7 +5117,7 @@
                     "hyperf/event": "Required to use DbQueryExecutedListener.",
                     "jonahgeorge/jaeger-client-php": "Required (^0.6) to use jaeger tracing."
                 },
-                "time": "2025-02-18T18:12:25+00:00",
+                "time": "2025-03-25T19:16:18+00:00",
                 "type": "library",
                 "extra": {
                     "branch-alias": {

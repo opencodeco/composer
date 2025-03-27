@@ -119,12 +119,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/opencodeco/hyperf-metric.git",
-                    "reference": "373a6544c43ee3a47e3056290d064257c5e0b2ab"
+                    "reference": "9819eddb8b1633130ed8c2cf0553a54a164ef9b5"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/opencodeco/hyperf-metric/zipball/373a6544c43ee3a47e3056290d064257c5e0b2ab",
-                    "reference": "373a6544c43ee3a47e3056290d064257c5e0b2ab",
+                    "url": "https://api.github.com/repos/opencodeco/hyperf-metric/zipball/9819eddb8b1633130ed8c2cf0553a54a164ef9b5",
+                    "reference": "9819eddb8b1633130ed8c2cf0553a54a164ef9b5",
                     "shasum": ""
                 },
                 "require": {
@@ -170,7 +170,7 @@
                     "promphp/prometheus_client_php": "Required to use Prometheus driver.(2.2.*)",
                     "slickdeals/statsd": "Required to use StatdD driver."
                 },
-                "time": "2025-03-06T16:13:30+00:00",
+                "time": "2025-03-27T16:30:51+00:00",
                 "default-branch": true,
                 "type": "library",
                 "extra": {
@@ -194,6 +194,9 @@
                 "scripts": {
                     "test": [
                         "co-phpunit"
+                    ],
+                    "test:filter": [
+                        "co-phpunit --prepend test/bootstrap.php -c phpunit.xml --colors=always --testdox --filter"
                     ],
                     "test-coverage": [
                         "co-phpunit --coverage-clover clover.xml"
@@ -221,7 +224,7 @@
                     "statsd"
                 ],
                 "support": {
-                    "source": "https://github.com/opencodeco/hyperf-metric/tree/v3.4.0",
+                    "source": "https://github.com/opencodeco/hyperf-metric/tree/v3.5.0",
                     "issues": "https://github.com/opencodeco/hyperf-metric/issues"
                 }
             }
