@@ -105,20 +105,25 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/opencodeco/hyperf-tracer.git",
-                    "reference": "f8993eeb302320f545255c8217eec0c9b01792d2"
+                    "reference": "5a801a768539f5db07a56cd07983fbef5554c9cf"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/opencodeco/hyperf-tracer/zipball/f8993eeb302320f545255c8217eec0c9b01792d2",
-                    "reference": "f8993eeb302320f545255c8217eec0c9b01792d2",
+                    "url": "https://api.github.com/repos/opencodeco/hyperf-tracer/zipball/5a801a768539f5db07a56cd07983fbef5554c9cf",
+                    "reference": "5a801a768539f5db07a56cd07983fbef5554c9cf",
                     "shasum": ""
                 },
                 "require": {
+                    "hyperf/collection": "~3.1.0",
+                    "hyperf/context": "~3.1.0",
                     "hyperf/contract": "~3.1.0",
+                    "hyperf/coordinator": "~3.1.0",
+                    "hyperf/coroutine": "~3.1.0",
                     "hyperf/di": "~3.1.0",
+                    "hyperf/engine": "^2.0",
                     "hyperf/guzzle": "~3.1.0",
+                    "hyperf/stringable": "~3.1.0",
                     "hyperf/support": "~3.1.0",
-                    "hyperf/utils": "~3.1.0",
                     "jcchavezs/zipkin-opentracing": "^2.0",
                     "jonahgeorge/jaeger-client-php": "^1.4",
                     "opentracing/opentracing": "^1.0",
@@ -140,7 +145,7 @@
                     "jonahgeorge/jaeger-client-php": "Required (^0.6) to use jaeger tracing.",
                     "longlang/phpkafka": "Required (^1.2) to use Kafka Producer."
                 },
-                "time": "2025-07-24T21:11:49+00:00",
+                "time": "2025-08-07T18:50:14+00:00",
                 "type": "library",
                 "extra": {
                     "branch-alias": {
