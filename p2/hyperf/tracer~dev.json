@@ -100,109 +100,6 @@
             },
             {
                 "name": "hyperf/tracer",
-                "version": "dev-feat/Update",
-                "version_normalized": "dev-feat/Update",
-                "source": {
-                    "type": "git",
-                    "url": "https://github.com/opencodeco/hyperf-tracer.git",
-                    "reference": "2ad4111989d850d47614405aacce4153042f6519"
-                },
-                "dist": {
-                    "type": "zip",
-                    "url": "https://api.github.com/repos/opencodeco/hyperf-tracer/zipball/2ad4111989d850d47614405aacce4153042f6519",
-                    "reference": "2ad4111989d850d47614405aacce4153042f6519",
-                    "shasum": ""
-                },
-                "require": {
-                    "hyperf/collection": "~3.1.0",
-                    "hyperf/context": "~3.1.0",
-                    "hyperf/contract": "~3.1.0",
-                    "hyperf/coordinator": "~3.1.0",
-                    "hyperf/coroutine": "~3.1.0",
-                    "hyperf/di": "~3.1.0",
-                    "hyperf/engine": "^2.0",
-                    "hyperf/guzzle": "~3.1.0",
-                    "hyperf/stringable": "~3.1.0",
-                    "hyperf/support": "~3.1.0",
-                    "jcchavezs/zipkin-opentracing": "^2.0",
-                    "jonahgeorge/jaeger-client-php": "^1.4",
-                    "opentracing/opentracing": "^1.0",
-                    "php": ">=8.1",
-                    "psr/http-message": "^1.0|^2.0"
-                },
-                "require-dev": {
-                    "friendsofphp/php-cs-fixer": "^3.21",
-                    "hyperf/config": "^3.0",
-                    "hyperf/testing": "^3.0",
-                    "mockery/mockery": "^1.6",
-                    "phpstan/extension-installer": "^1.3",
-                    "phpstan/phpstan": "^1.10",
-                    "phpstan/phpstan-mockery": "^1.1",
-                    "rector/rector": "^0.17.5"
-                },
-                "suggest": {
-                    "hyperf/event": "Required to use DbQueryExecutedListener.",
-                    "jonahgeorge/jaeger-client-php": "Required (^0.6) to use jaeger tracing.",
-                    "longlang/phpkafka": "Required (^1.2) to use Kafka Producer."
-                },
-                "time": "2025-08-11T19:32:39+00:00",
-                "type": "library",
-                "extra": {
-                    "branch-alias": {
-                        "dev-master": "3.1-dev"
-                    },
-                    "hyperf": {
-                        "config": "Hyperf\\Tracer\\ConfigProvider"
-                    }
-                },
-                "autoload": {
-                    "psr-4": {
-                        "Hyperf\\Tracer\\": "src/"
-                    }
-                },
-                "autoload-dev": {
-                    "psr-4": {
-                        "HyperfTest\\Tracer\\": "tests/"
-                    }
-                },
-                "scripts": {
-                    "test": [
-                        "co-phpunit"
-                    ],
-                    "test-coverage": [
-                        "co-phpunit --coverage-clover clover.xml"
-                    ],
-                    "cs-fix": [
-                        "php-cs-fixer fix $1"
-                    ],
-                    "analyse": [
-                        "phpstan analyse --memory-limit=-1 -l 5 -c phpstan.neon"
-                    ],
-                    "rector": [
-                        "rector process --clear-cache"
-                    ]
-                },
-                "license": [
-                    "MIT"
-                ],
-                "description": "Drop-in replacement for the Hyperf Tracer component.",
-                "homepage": "https://hyperf.io",
-                "keywords": [
-                    "hyperf",
-                    "jaeger",
-                    "open-tracing",
-                    "php",
-                    "zipkin"
-                ],
-                "support": {
-                    "issues": "https://github.com/hyperf/hyperf/issues",
-                    "source": "https://github.com/hyperf/hyperf",
-                    "docs": "https://hyperf.wiki",
-                    "pull-request": "https://github.com/hyperf/hyperf/pulls"
-                }
-            },
-            {
-                "name": "hyperf/tracer",
                 "version": "dev-http-server-semantic-convetions",
                 "version_normalized": "dev-http-server-semantic-convetions",
                 "source": {
@@ -305,24 +202,29 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/opencodeco/hyperf-tracer.git",
-                    "reference": "c8ffef951967c83a1ee06110f76480fd5e306855"
+                    "reference": "00890fa68f8d1c7bf9974383ea3f15f7edde98a4"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/opencodeco/hyperf-tracer/zipball/c8ffef951967c83a1ee06110f76480fd5e306855",
-                    "reference": "c8ffef951967c83a1ee06110f76480fd5e306855",
+                    "url": "https://api.github.com/repos/opencodeco/hyperf-tracer/zipball/00890fa68f8d1c7bf9974383ea3f15f7edde98a4",
+                    "reference": "00890fa68f8d1c7bf9974383ea3f15f7edde98a4",
                     "shasum": ""
                 },
                 "require": {
-                    "hyperf/contract": "^3.0",
-                    "hyperf/di": "^3.0",
-                    "hyperf/guzzle": "^3.0",
-                    "hyperf/support": "^3.0",
-                    "hyperf/utils": "^3.0",
+                    "hyperf/collection": "~3.1.0",
+                    "hyperf/context": "~3.1.0",
+                    "hyperf/contract": "~3.1.0",
+                    "hyperf/coordinator": "~3.1.0",
+                    "hyperf/coroutine": "~3.1.0",
+                    "hyperf/di": "~3.1.0",
+                    "hyperf/engine": "^2.0",
+                    "hyperf/guzzle": "~3.1.0",
+                    "hyperf/stringable": "~3.1.0",
+                    "hyperf/support": "~3.1.0",
                     "jcchavezs/zipkin-opentracing": "^2.0",
                     "jonahgeorge/jaeger-client-php": "^1.4",
                     "opentracing/opentracing": "^1.0",
-                    "php": ">=8.0",
+                    "php": ">=8.1",
                     "psr/http-message": "^1.0|^2.0"
                 },
                 "require-dev": {
@@ -337,14 +239,15 @@
                 },
                 "suggest": {
                     "hyperf/event": "Required to use DbQueryExecutedListener.",
-                    "jonahgeorge/jaeger-client-php": "Required (^0.6) to use jaeger tracing."
+                    "jonahgeorge/jaeger-client-php": "Required (^0.6) to use jaeger tracing.",
+                    "longlang/phpkafka": "Required (^1.2) to use Kafka Producer."
                 },
-                "time": "2025-04-04T18:56:22+00:00",
+                "time": "2025-08-18T19:22:47+00:00",
                 "default-branch": true,
                 "type": "library",
                 "extra": {
                     "branch-alias": {
-                        "dev-master": "3.0-dev"
+                        "dev-master": "3.1-dev"
                     },
                     "hyperf": {
                         "config": "Hyperf\\Tracer\\ConfigProvider"
@@ -390,10 +293,10 @@
                     "zipkin"
                 ],
                 "support": {
-                    "docs": "https://hyperf.wiki",
                     "issues": "https://github.com/hyperf/hyperf/issues",
-                    "pull-request": "https://github.com/hyperf/hyperf/pulls",
-                    "source": "https://github.com/hyperf/hyperf"
+                    "source": "https://github.com/hyperf/hyperf",
+                    "docs": "https://hyperf.wiki",
+                    "pull-request": "https://github.com/hyperf/hyperf/pulls"
                 }
             }
         ]
