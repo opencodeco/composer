@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/opencodeco/hyperf-testing.git",
-                    "reference": "686e05f2dfb5e0b82112d7f355fbae330639af55"
+                    "reference": "de61033d1cc143baac1c52f0568c8c9e5192481b"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/opencodeco/hyperf-testing/zipball/686e05f2dfb5e0b82112d7f355fbae330639af55",
-                    "reference": "686e05f2dfb5e0b82112d7f355fbae330639af55",
+                    "url": "https://api.github.com/repos/opencodeco/hyperf-testing/zipball/de61033d1cc143baac1c52f0568c8c9e5192481b",
+                    "reference": "de61033d1cc143baac1c52f0568c8c9e5192481b",
                     "shasum": ""
                 },
                 "require": {
@@ -32,10 +32,16 @@
                     "psr/container": "^1.0 || ^2.0",
                     "symfony/http-foundation": "^5.4 || ^6.0"
                 },
+                "require-dev": {
+                    "hyperf/config": "^3.1",
+                    "hyperf/di": "^3.1",
+                    "mockery/mockery": "^1.6",
+                    "swoole/ide-helper": "^5.1"
+                },
                 "suggest": {
                     "fakerphp/faker": "Required to use Faker feature.(^1.23)"
                 },
-                "time": "2024-09-06T17:39:56+00:00",
+                "time": "2025-08-26T18:50:22+00:00",
                 "default-branch": true,
                 "bin": [
                     "co-phpunit"
@@ -56,6 +62,11 @@
                         "HyperfTest\\Testing\\": "tests/"
                     }
                 },
+                "scripts": {
+                    "test": [
+                        "./co-phpunit --exclude-group NonCoroutine"
+                    ]
+                },
                 "license": [
                     "MIT"
                 ],
@@ -67,7 +78,8 @@
                     "testing"
                 ],
                 "support": {
-                    "source": "https://github.com/opencodeco/hyperf-testing/tree/3.1.5"
+                    "source": "https://github.com/opencodeco/hyperf-testing/tree/3.1.6",
+                    "issues": "https://github.com/opencodeco/hyperf-testing/issues"
                 }
             }
         ]
