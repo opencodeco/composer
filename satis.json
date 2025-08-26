@@ -27,6 +27,11 @@
     {
       "type": "vcs",
       "url": "https://github.com/opencodeco/hyperf-testing"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/opencodeco/http-message"
     }
   ]
 }
+
