@@ -30,7 +30,7 @@
     },
     {
       "type": "vcs",
-      "url": "https://github.com/opencodeco/http-message"
+      "url": "https://github.com/opencodeco/hyperf-http-message"
     }
   ]
 }
