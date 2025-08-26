@@ -70,7 +70,7 @@
                     "swoole"
                 ],
                 "support": {
-                    "source": "https://github.com/opencodeco/http-message/tree/main",
+                    "source": "https://github.com/opencodeco/http-message/tree/v3.1.58",
                     "issues": "https://github.com/opencodeco/http-message/issues"
                 }
             }

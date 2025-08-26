@@ -502,6 +502,78 @@
             }
         },
         "hyperf/http-message": {
+            "v3.1.58": {
+                "name": "hyperf/http-message",
+                "version": "v3.1.58",
+                "version_normalized": "3.1.58.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/opencodeco/http-message.git",
+                    "reference": "87a28afd8913b8a523cb1d3e77ff2d3adae60ed4"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/opencodeco/http-message/zipball/87a28afd8913b8a523cb1d3e77ff2d3adae60ed4",
+                    "reference": "87a28afd8913b8a523cb1d3e77ff2d3adae60ed4",
+                    "shasum": ""
+                },
+                "require": {
+                    "hyperf/codec": "~3.1.0",
+                    "hyperf/context": "~3.1.0",
+                    "hyperf/contract": "~3.1.0",
+                    "hyperf/coroutine": "~3.1.0",
+                    "hyperf/engine": "^2.11",
+                    "hyperf/support": "~3.1.0",
+                    "php": ">=8.1",
+                    "psr/http-message": "^1.0 || ^2.0",
+                    "swow/psr7-plus": "^1.0"
+                },
+                "require-dev": {
+                    "mockery/mockery": "^1.6",
+                    "phpunit/phpunit": "^12.3",
+                    "psr/container": "^2.0",
+                    "swoole/ide-helper": "^6.0"
+                },
+                "suggest": {
+                    "psr/container": "Required to replace RequestParserInterface."
+                },
+                "time": "2025-08-26T17:08:49+00:00",
+                "type": "library",
+                "extra": {
+                    "hyperf": {
+                        "config": "Hyperf\\HttpMessage\\ConfigProvider"
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Hyperf\\HttpMessage\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "HyperfTest\\HttpMessage\\": "tests/"
+                    }
+                },
+                "scripts": {
+                    "test": [
+                        "phpunit"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "description": "microservice framework base on swoole",
+                "keywords": [
+                    "http-message",
+                    "hyperf",
+                    "php",
+                    "swoole"
+                ],
+                "support": {
+                    "source": "https://github.com/opencodeco/http-message/tree/v3.1.58",
+                    "issues": "https://github.com/opencodeco/http-message/issues"
+                }
+            },
             "dev-main": {
                 "name": "hyperf/http-message",
                 "version": "dev-main",
@@ -571,7 +643,7 @@
                     "swoole"
                 ],
                 "support": {
-                    "source": "https://github.com/opencodeco/http-message/tree/main",
+                    "source": "https://github.com/opencodeco/http-message/tree/v3.1.58",
                     "issues": "https://github.com/opencodeco/http-message/issues"
                 }
             }
