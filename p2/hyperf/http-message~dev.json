@@ -7,12 +7,12 @@
                 "version_normalized": "dev-main",
                 "source": {
                     "type": "git",
-                    "url": "https://github.com/opencodeco/http-message.git",
+                    "url": "https://github.com/opencodeco/hyperf-http-message.git",
                     "reference": "87a28afd8913b8a523cb1d3e77ff2d3adae60ed4"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/opencodeco/http-message/zipball/87a28afd8913b8a523cb1d3e77ff2d3adae60ed4",
+                    "url": "https://api.github.com/repos/opencodeco/hyperf-http-message/zipball/87a28afd8913b8a523cb1d3e77ff2d3adae60ed4",
                     "reference": "87a28afd8913b8a523cb1d3e77ff2d3adae60ed4",
                     "shasum": ""
                 },
@@ -70,8 +70,8 @@
                     "swoole"
                 ],
                 "support": {
-                    "source": "https://github.com/opencodeco/http-message/tree/v3.1.58",
-                    "issues": "https://github.com/opencodeco/http-message/issues"
+                    "source": "https://github.com/opencodeco/hyperf-http-message/tree/v3.1.58",
+                    "issues": "https://github.com/opencodeco/hyperf-http-message/issues"
                 }
             }
         ]

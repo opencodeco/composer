@@ -3,8 +3,8 @@
         "hyperf/testing": [
             {
                 "name": "hyperf/testing",
-                "version": "dev-master",
-                "version_normalized": "dev-master",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
                 "source": {
                     "type": "git",
                     "url": "https://github.com/opencodeco/hyperf-testing.git",
