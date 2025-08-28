@@ -6428,12 +6428,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/opencodeco/hyperf-tracer.git",
-                    "reference": "877571332f8aa546128e0641070bdbc67d5858cf"
+                    "reference": "d808169af5f2ceab64abdfd71cee95409c34b5e6"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/opencodeco/hyperf-tracer/zipball/877571332f8aa546128e0641070bdbc67d5858cf",
-                    "reference": "877571332f8aa546128e0641070bdbc67d5858cf",
+                    "url": "https://api.github.com/repos/opencodeco/hyperf-tracer/zipball/d808169af5f2ceab64abdfd71cee95409c34b5e6",
+                    "reference": "d808169af5f2ceab64abdfd71cee95409c34b5e6",
                     "shasum": ""
                 },
                 "require": {
@@ -6468,7 +6468,7 @@
                     "jonahgeorge/jaeger-client-php": "Required (^0.6) to use jaeger tracing.",
                     "longlang/phpkafka": "Required (^1.2) to use Kafka Producer."
                 },
-                "time": "2025-08-27T20:42:16+00:00",
+                "time": "2025-08-28T14:04:11+00:00",
                 "type": "library",
                 "extra": {
                     "branch-alias": {
