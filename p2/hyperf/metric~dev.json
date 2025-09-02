@@ -234,12 +234,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/opencodeco/hyperf-metric.git",
-                    "reference": "725d62d81eefc59e8178673aed202ddc3a7d6ba8"
+                    "reference": "29c0d39a9cdf4ddfd47cfdf08dba203d1d24a885"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/opencodeco/hyperf-metric/zipball/725d62d81eefc59e8178673aed202ddc3a7d6ba8",
-                    "reference": "725d62d81eefc59e8178673aed202ddc3a7d6ba8",
+                    "url": "https://api.github.com/repos/opencodeco/hyperf-metric/zipball/29c0d39a9cdf4ddfd47cfdf08dba203d1d24a885",
+                    "reference": "29c0d39a9cdf4ddfd47cfdf08dba203d1d24a885",
                     "shasum": ""
                 },
                 "require": {
@@ -284,7 +284,7 @@
                     "promphp/prometheus_client_php": "Required to use Prometheus driver.(2.2.*)",
                     "slickdeals/statsd": "Required to use StatdD driver."
                 },
-                "time": "2025-09-01T12:45:25+00:00",
+                "time": "2025-09-02T14:30:30+00:00",
                 "default-branch": true,
                 "type": "library",
                 "extra": {
@@ -338,7 +338,7 @@
                     "statsd"
                 ],
                 "support": {
-                    "source": "https://github.com/opencodeco/hyperf-metric/tree/v3.6.6",
+                    "source": "https://github.com/opencodeco/hyperf-metric/tree/v3.6.7",
                     "issues": "https://github.com/opencodeco/hyperf-metric/issues"
                 }
             }
