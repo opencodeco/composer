@@ -300,6 +300,103 @@
             },
             {
                 "name": "hyperf/tracer",
+                "version": "dev-improve-http-client-aspect-uri-mask",
+                "version_normalized": "dev-improve-http-client-aspect-uri-mask",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/opencodeco/hyperf-tracer.git",
+                    "reference": "2eaa24937d41e70fe25a6b6f4e70dbaa4fd00268"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/opencodeco/hyperf-tracer/zipball/2eaa24937d41e70fe25a6b6f4e70dbaa4fd00268",
+                    "reference": "2eaa24937d41e70fe25a6b6f4e70dbaa4fd00268",
+                    "shasum": ""
+                },
+                "require": {
+                    "hyperf/contract": "^3.0",
+                    "hyperf/di": "^3.0",
+                    "hyperf/guzzle": "^3.0",
+                    "hyperf/support": "^3.0",
+                    "hyperf/utils": "^3.0",
+                    "jcchavezs/zipkin-opentracing": "^2.0",
+                    "jonahgeorge/jaeger-client-php": "^1.4",
+                    "opentracing/opentracing": "^1.0",
+                    "php": ">=8.0",
+                    "psr/http-message": "^1.0|^2.0"
+                },
+                "require-dev": {
+                    "friendsofphp/php-cs-fixer": "^3.21",
+                    "hyperf/config": "^3.0",
+                    "hyperf/testing": "^3.0",
+                    "mockery/mockery": "^1.6",
+                    "phpstan/extension-installer": "^1.3",
+                    "phpstan/phpstan": "^1.10",
+                    "phpstan/phpstan-mockery": "^1.1",
+                    "rector/rector": "^0.17.5"
+                },
+                "suggest": {
+                    "hyperf/event": "Required to use DbQueryExecutedListener.",
+                    "jonahgeorge/jaeger-client-php": "Required (^0.6) to use jaeger tracing."
+                },
+                "time": "2025-09-29T13:20:03+00:00",
+                "type": "library",
+                "extra": {
+                    "branch-alias": {
+                        "dev-master": "3.0-dev"
+                    },
+                    "hyperf": {
+                        "config": "Hyperf\\Tracer\\ConfigProvider"
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Hyperf\\Tracer\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "HyperfTest\\Tracer\\": "tests/"
+                    }
+                },
+                "scripts": {
+                    "test": [
+                        "co-phpunit"
+                    ],
+                    "test-coverage": [
+                        "co-phpunit --coverage-clover clover.xml"
+                    ],
+                    "cs-fix": [
+                        "php-cs-fixer fix $1"
+                    ],
+                    "analyse": [
+                        "phpstan analyse --memory-limit=-1 -l 5 -c phpstan.neon"
+                    ],
+                    "rector": [
+                        "rector process --clear-cache"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "description": "Drop-in replacement for the Hyperf Tracer component.",
+                "homepage": "https://hyperf.io",
+                "keywords": [
+                    "hyperf",
+                    "jaeger",
+                    "open-tracing",
+                    "php",
+                    "zipkin"
+                ],
+                "support": {
+                    "docs": "https://hyperf.wiki",
+                    "issues": "https://github.com/hyperf/hyperf/issues",
+                    "pull-request": "https://github.com/hyperf/hyperf/pulls",
+                    "source": "https://github.com/hyperf/hyperf"
+                }
+            },
+            {
+                "name": "hyperf/tracer",
                 "version": "dev-main",
                 "version_normalized": "dev-main",
                 "source": {
@@ -497,6 +594,103 @@
                     "source": "https://github.com/hyperf/hyperf",
                     "docs": "https://hyperf.wiki",
                     "pull-request": "https://github.com/hyperf/hyperf/pulls"
+                }
+            },
+            {
+                "name": "hyperf/tracer",
+                "version": "dev-uri-improvement",
+                "version_normalized": "dev-uri-improvement",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/opencodeco/hyperf-tracer.git",
+                    "reference": "33edd8f4bd607ed06a38f0a29313e66b1f1ba38f"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/opencodeco/hyperf-tracer/zipball/33edd8f4bd607ed06a38f0a29313e66b1f1ba38f",
+                    "reference": "33edd8f4bd607ed06a38f0a29313e66b1f1ba38f",
+                    "shasum": ""
+                },
+                "require": {
+                    "hyperf/contract": "^3.0",
+                    "hyperf/di": "^3.0",
+                    "hyperf/guzzle": "^3.0",
+                    "hyperf/support": "^3.0",
+                    "hyperf/utils": "^3.0",
+                    "jcchavezs/zipkin-opentracing": "^2.0",
+                    "jonahgeorge/jaeger-client-php": "^1.4",
+                    "opentracing/opentracing": "^1.0",
+                    "php": ">=8.0",
+                    "psr/http-message": "^1.0|^2.0"
+                },
+                "require-dev": {
+                    "friendsofphp/php-cs-fixer": "^3.21",
+                    "hyperf/config": "^3.0",
+                    "hyperf/testing": "^3.0",
+                    "mockery/mockery": "^1.6",
+                    "phpstan/extension-installer": "^1.3",
+                    "phpstan/phpstan": "^1.10",
+                    "phpstan/phpstan-mockery": "^1.1",
+                    "rector/rector": "^0.17.5"
+                },
+                "suggest": {
+                    "hyperf/event": "Required to use DbQueryExecutedListener.",
+                    "jonahgeorge/jaeger-client-php": "Required (^0.6) to use jaeger tracing."
+                },
+                "time": "2025-08-29T18:53:07+00:00",
+                "type": "library",
+                "extra": {
+                    "branch-alias": {
+                        "dev-master": "3.0-dev"
+                    },
+                    "hyperf": {
+                        "config": "Hyperf\\Tracer\\ConfigProvider"
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Hyperf\\Tracer\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "HyperfTest\\Tracer\\": "tests/"
+                    }
+                },
+                "scripts": {
+                    "test": [
+                        "co-phpunit"
+                    ],
+                    "test-coverage": [
+                        "co-phpunit --coverage-clover clover.xml"
+                    ],
+                    "cs-fix": [
+                        "php-cs-fixer fix $1"
+                    ],
+                    "analyse": [
+                        "phpstan analyse --memory-limit=-1 -l 5 -c phpstan.neon"
+                    ],
+                    "rector": [
+                        "rector process --clear-cache"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "description": "Drop-in replacement for the Hyperf Tracer component.",
+                "homepage": "https://hyperf.io",
+                "keywords": [
+                    "hyperf",
+                    "jaeger",
+                    "open-tracing",
+                    "php",
+                    "zipkin"
+                ],
+                "support": {
+                    "docs": "https://hyperf.wiki",
+                    "issues": "https://github.com/hyperf/hyperf/issues",
+                    "pull-request": "https://github.com/hyperf/hyperf/pulls",
+                    "source": "https://github.com/hyperf/hyperf"
                 }
             }
         ]
