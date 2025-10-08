@@ -31,6 +31,10 @@
     {
       "type": "vcs",
       "url": "https://github.com/opencodeco/hyperf-http-message"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/opencodeco/hyperf-opentelemetry"
     }
   ]
 }
